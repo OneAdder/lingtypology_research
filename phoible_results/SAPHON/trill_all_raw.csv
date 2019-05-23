@@ -1,0 +1,326 @@
+,language,trill,elevation
+bani1255,Baniwa do Icana,1,152
+bari1297,Barí,1,87
+cham1315,Chamacoco,1,91
+embe1259,Emberá-Baudó,1,263
+embe1260,Emberá-Catío,1,14
+embe1262,Emberá-Chamí,1,1906
+epen1239,Epena,1,22
+japr1238,Japrería,1,859
+mala1522,Malayo,1,2877
+muin1242,Muinane,1,177
+nort2972,Northern Emberá,1,234
+puel1244,Puelche,1,121
+sali1298,Sáliba,1,119
+wayu1243,Wayuu,1,37
+woun1238,Woun Meu,1,62
+xiri1243,Xiriâna,1,263
+yawa1261,Yawalapití,1,331
+0,Qawasqar,0,80
+1,Mapudungun,0,1538
+2,Achagua,0,168
+3,Apurinã,0,138
+4,Lokono,0,7
+5,Asháninka,0,497
+6,Ajyíninka Apurucayali,0,500
+7,Ashéninka Perené,0,956
+8,Pichis Ashéninka,0,1033
+9,Ucayali-Yurúa Ashéninka,0,324
+10,Baré,0,100
+11,Cabiyarí,0,185
+12,Caquinte,0,795
+13,Chamicuro,0,129
+14,Curripaco,0,98
+15,Enawené-Nawé,0,371
+16,Iñapari,0,278
+17,Kinikinao,0,366
+18,Machinere,0,249
+19,Machiguenga,0,2191
+20,Mehináku,0,314
+21,Nanti,0,1607
+22,Nomatsiguenga,0,890
+23,Palikúr,0,42
+24,Paraujano,0,65
+25,Parecís,0,384
+26,Piapoco,0,126
+27,Resígaro,0,127
+28,Tariana,0,114
+29,Terena-Kinikinao-Chane,0,233
+30,Wapishana,0,130
+31,Baniva de Maroa,0,109
+32,Waurá,0,362
+33,Yanesha',0,2474
+34,Yavitero,0,120
+35,Yine,0,355
+36,Yucuna,0,164
+37,Baure,0,137
+38,Ignaciano,0,159
+39,Deni,0,144
+40,Madi,0,96
+41,Culina,0,224
+42,Paumari,0,41
+43,Suruahá,0,124
+44,Central Aymara,0,4210
+45,Jaqaru,0,2766
+46,Awa-Cuaiquer,0,453
+47,Cha'palaa,0,122
+48,Guambiano,0,1725
+49,Tsafiki,0,440
+50,Bora,0,70
+52,Jebero,0,242
+53,Shawi,0,1083
+54,Akurio,0,205
+55,Apalaí,0,354
+56,Pará Arára,0,181
+57,Bakairí,0,428
+58,Galibi Carib,0,6
+59,Carijona,0,228
+60,Hixkaryána,0,341
+61,Ikpeng,0,335
+62,Akawaio,0,970
+63,Kaxuiâna,0,346
+64,Kuikúro-Kalapálo,0,283
+65,Macushi,0,387
+66,Mapoyo,0,200
+67,Maquiritari,0,1193
+68,Panare,0,52
+69,Pemon,0,838
+70,Pémono,0,169
+71,Trió,0,638
+72,Waimiri-Atroari,0,83
+73,Waiwai,0,409
+74,Wayana,0,182
+75,Yabarana,0,808
+76,Oro Win,0,381
+77,Wari',0,153
+78,Arhuaco,0,3650
+79,Chibcha,0,212
+80,Chimila,0,193
+81,Cofán,0,342
+82,Cogui,0,1649
+83,Border Kuna,0,460
+84,Central Tunebo,0,560
+85,Selk'nam,0,108
+86,Tehuelche,0,299
+87,Cocama-Cocamilla,0,93
+88,Cuiba,0,98
+89,Guahibo,0,88
+90,Guayabero,0,177
+91,Macaguán,0,150
+92,Abipon,0,65
+93,Kadiwéu,0,86
+94,Mocoví,0,64
+95,Pilagá,0,119
+96,Toba,0,139
+97,Amarakaeri,0,266
+98,Cholón,0,694
+99,Andoque,0,181
+100,Aewa,0,216
+101,Camsá,0,2387
+102,Candoshi-Shapra,0,145
+103,Cayubaba,0,141
+104,Irántxe-Münkü,0,403
+105,Itonama,0,169
+106,Leco,0,496
+107,Olu'bo,0,721
+108,Mochica,0,379
+109,Movima,0,146
+110,Muniche,0,182
+111,Páez,0,3472
+112,Puinave,0,77
+113,Taushiro,0,212
+114,Ticuna,0,150
+115,Tinigua,0,264
+116,Trumai,0,284
+117,Urarina,0,125
+118,Vilela,0,54
+119,Waorani,0,259
+120,Warao,0,26
+121,Yámana,0,279
+122,Yuracaré,0,209
+123,Achuar-Shiwiar,0,251
+124,Aguaruna,0,1526
+125,Huambisa,0,1193
+126,Shuar,0,1256
+127,Kakua,0,155
+128,Nukak Makú,0,227
+129,Katukína,0,174
+130,Apinayé,0,229
+131,Arikapú,0,191
+132,Bororo,0,180
+133,Canela-Krahô,0,298
+134,Chiquitano,0,315
+135,Pará Gavião,0,128
+136,Guató,0,101
+137,Djeoromitxí,0,164
+138,Kaingang,0,662
+139,Karajá,0,184
+140,Kayapó,0,403
+141,Krahô,0,231
+142,Krenak,0,188
+143,Krikati-Timbira,0,332
+144,Maxakalí,0,294
+145,Ofayé,0,344
+146,Panará,0,309
+147,Puri,0,1737
+148,Rikbaktsa,0,248
+149,Suyá,0,283
+150,Umotína,0,135
+151,Xavánte,0,323
+152,Xerénte,0,305
+153,Xokleng,0,794
+154,Fulniô,0,391
+155,São Paulo Kaingáng,0,736
+156,Iyo'wujwa Chorote,0,269
+157,Maca,0,70
+158,Nivaclé,0,209
+159,Wichí Lhamtés Nocten,0,656
+160,Callawalla,0,2399
+161,Mosetén-Chimané,0,385
+162,Pirahã,0,75
+163,Dâw,0,115
+164,Hupdë,0,156
+165,Nadëb,0,79
+166,Yuhup,0,109
+168,Latundê,0,480
+169,Mamaindé,0,578
+170,Sabanê,0,312
+171,Amahuaca,0,429
+172,Sharanahua,0,329
+173,Capanahua,0,189
+174,Cashibo-Cacataibo,0,285
+175,Chácobo,0,185
+176,Cashinahua,0,279
+177,Panoan Katukína,0,239
+178,Kaxararí,0,157
+179,Korubo,0,145
+180,Matís,0,76
+181,Matsés,0,151
+182,Nukuini,0,244
+183,Panobo,0,534
+184,Poyanáwa,0,215
+185,Siang,0,52
+186,Shall-Zwall,0,578
+188,Yaminahua,0,322
+189,Yawanawa,0,261
+190,Yora,0,569
+191,Yagua,0,97
+192,Yameo,0,143
+193,Corongo Ancash Quechua,0,3515
+194,Cajamarca Quechua,0,3238
+195,Chachapoyas Quechua,0,2477
+196,Cusco Quechua,0,4573
+197,Lambayeque Quechua,0,1886
+198,Imbabura Highland Quichua,0,3424
+199,Inga,0,2471
+200,Jungle Inga,0,371
+201,Jauja Wanca Quechua,0,4697
+202,North Junín Quechua,0,4270
+203,Ayacucho Quechua,0,3504
+204,North Bolivian Quechua,0,2814
+205,Huallaga Huánuco Quechua,0,1221
+206,Northern Conchucos Ancash Quechua,0,3530
+207,San Martín Quechua,0,950
+208,Santiago del Estero Quichua,0,138
+209,Napo Lowland Quechua,0,262
+210,Salasaca Highland Quichua,0,2483
+211,Tena Lowland Quichua,0,978
+212,Piaroa,0,92
+213,Araona,0,199
+214,Cavineña,0,173
+215,Ese Ejja,0,221
+216,Reyesano,0,254
+217,Tacana,0,207
+218,Barasana-Eduria,0,238
+219,Cubeo,0,192
+220,Desano,0,149
+221,Kotiria,0,143
+222,Carapana,0,126
+223,Koreguaje,0,245
+224,Macuna,0,169
+225,Maijiki,0,144
+226,Wa'ikhana,0,143
+227,Secoya,0,211
+228,Siona-Tetete,0,236
+229,Siriano,0,186
+230,Tanimuca-Retuarã,0,128
+231,Tatuyo,0,219
+232,Tucano,0,144
+233,Tuyuca,0,182
+234,Waimaha,0,167
+235,Yurutí,0,176
+236,Aché,0,158
+237,Akuntsu,0,352
+238,Amundava,0,115
+239,Apiaká,0,142
+240,Araweté,0,207
+241,Xingú Asuriní,0,184
+242,Tocantins Asurini,0,99
+243,Avá-Canoeiro,0,540
+244,Awetí,0,297
+245,Eastern Bolivian Guaraní,0,272
+246,Teko,0,168
+247,Gavião Do Jiparaná,0,232
+248,Guajá,0,138
+249,Guajajára,0,308
+250,Mbyá Guaraní,0,524
+251,Paraguayan Guaraní,0,184
+252,Guarayu,0,353
+253,Júma,0,68
+254,Jurúna,0,315
+255,Urubú-Kaapor,0,95
+256,Kaiwá,0,306
+257,Kamayurá,0,311
+258,Karitiâna,0,125
+260,Kayabí,0,345
+261,Kuruáya,0,149
+262,Makuráp,0,193
+263,Mundurukú,0,108
+264,Nhengatu,0,109
+265,Omagua,0,71
+266,Pai Tavytera,0,284
+267,Parakanã,0,177
+268,Mekens,0,156
+269,Sateré-Mawé,0,58
+270,Suruí,0,204
+271,Tapieté,0,304
+272,Tapirapé,0,181
+273,Tenetehara,0,54
+274,Tenharim-Parintintin-Diahoi,0,96
+275,Tuparí,0,247
+276,Tupinambá,0,70
+277,Uru-Eu-Wau-Wau,0,251
+278,Wayampi,0,204
+279,Xetá,0,690
+280,Xipaya,0,90
+281,Zo'é,0,87
+282,Sirionó,0,182
+283,Yuqui,0,208
+284,Aikanã,0,520
+285,Mato Grosso Arára,0,138
+286,Hoti,0,848
+287,Kanoê,0,142
+288,Karirí-Xocó,0,163
+289,Kunza,0,2621
+290,Kwaza,0,176
+291,Pumé,0,53
+292,Chipaya,0,3721
+293,Uru,0,3822
+294,Minica Huitoto,0,162
+295,Murui Huitoto,0,165
+296,Nonuya,0,155
+297,Ocaina,0,114
+298,Ninam,0,575
+299,Sanumá,0,121
+300,Yanomámi,0,341
+301,Yanomamö,0,548
+302,Ayoreo,0,235
+303,Andoa,0,225
+304,Arabela,0,182
+305,Iquito,0,135
+306,Záparo,0,207
+307,Chiripá,0,202
+308,Pisamira,0,181
+309,Pacahuara,0,152
+310,Yukpa,0,1989
+311,Trinitario,0,165

@@ -1,0 +1,195 @@
+,language,trill,elevation
+adze1240,Adzera,1,207
+ainu1240,Hokkaido Ainu,1,216
+akan1250,Akan,2,166
+aleu1260,Aleut,1,82
+amha1245,Amharic,1,3440
+basq1248,Basque,1,362
+bata1289,Batak Toba,1,948
+bouy1240,Bouyei,1,774
+bret1244,Breton,1,143
+bulg1262,Bulgarian,2,98
+buru1296,Burushaski,1,3309
+cent1973,Central Pashto,2,1057
+cent2050,Central Kanuri,1,314
+cent2144,Central Mazahua,1,2941
+chac1249,Cha'palaa,1,122
+chip1261,Chipewyan,1,258
+chiq1250,Chiquihuitlán Mazatec,1,1897
+chuv1255,Chuvash,2,95
+copa1236,Copainalá Zoque,1,526
+egyp1253,Egyptian Arabic,1,6
+even1260,Even,1,0
+finn1318,Finnish,2,66
+gaaa1244,Ga,1,94
+gily1242,Nivkh,2,365
+halh1238,Halh Mongolian,1,1305
+haus1257,Hausa,1,600
+hind1269,Hindi,2,416
+hung1274,Hungarian,2,110
+icel1247,Icelandic,2,0
+iraq1241,Iraqw,1,1767
+java1254,Javanese,1,112
+kaba1278,Kabardian,1,1234
+kash1277,Kashmiri,1,1623
+khan1273,Kazym-Berezover-Suryskarer Khanty,1,54
+khas1269,Khasi,1,38
+kirg1245,Kirghiz,1,3699
+komi1268,Komi-Zyrian,1,125
+kota1263,Kota (India),1,1456
+koyr1242,Koyraboro Senni Songhai,2,261
+kumi1248,Tipai,1,297
+kunj1245,Kunjen,1,162
+kuru1302,Kurukh,3,284
+lakk1252,Lak,1,2018
+lith1251,Lithuanian,2,54
+lugb1240,Lugbara,1,1225
+malt1254,Maltese,2,44
+mara1386,Maranunggu,1,23
+marg1265,Marghi Central,1,426
+masa1300,Masai,1,1187
+maun1240,Mawng,1,28
+moro1292,Moroccan Arabic,2,352
+mund1320,Mundari,1,50
+nene1249,Tundra Nenets,2,0
+ngas1240,Ngas,1,1130
+nobi1240,Nobiin,2,277
+nort2745,Northern Yukaghir,1,0
+nucl1235,Eastern Armenian,1,1912
+nucl1302,Georgian,1,1338
+nung1290,Wubuy,1,6
+nyan1301,Nyangumarta,1,260
+nyis1236,Nyishi-Hill Miri,1,996
+panj1256,Eastern Panjabi,1,227
+para1311,Paraguayan Guaraní,1,184
+russ1263,Russian,2,185
+saba1265,Sa'ban,1,1002
+sanm1295,San Miguel El Grande Mixtec,1,2279
+seda1262,Sedang,3,1287
+soma1255,Somali,1,211
+sout2961,Southern Tiwa,1,1532
+sout2991,South Bolivian Quechua,1,4156
+stan1288,Spanish,1,1202
+stan1290,French,2,124
+stan1295,German,1,368
+stan1306,Standard Malay,1,54
+swah1253,Swahili,1,200
+taba1266,Tabasco Chontal,1,3
+tari1263,Tarifiyt-Beni-Iznasen-Eastern Middle Atlas Berber,3,408
+telu1262,Telugu,1,440
+tigr1270,Tigre,2,2112
+tosk1239,Northern Tosk Albanian,1,88
+tuni1252,Tunica,1,40
+tzel1254,Tzeltal,1,2091
+wayu1243,Wayuu,1,37
+west2369,Western Farsi,1,2174
+wikm1247,Wik-Mungkan,1,32
+yaku1245,Sakha,1,875
+0,Korean,0,154
+1,Ket,0,176
+2,Kharia,0,376
+3,Central Khmer,0,26
+4,Vietnamese,0,8
+5,Mandarin Chinese,0,88
+6,Wu Chinese,0,205
+7,Hakka Chinese,0,365
+8,Yue Chinese,0,-3
+9,Iu Mien,0,1299
+10,Burmese,0,711
+11,Lahu,0,1476
+12,Garo,0,114
+13,S'gaw Karen,0,246
+14,Lakkia,0,767
+15,Thai,0,3
+16,Western Cham,0,35
+17,Atayal,0,1882
+18,Plateau Malagasy,0,1653
+19,Sundanese,0,493
+20,Tagalog,0,93
+21,Chamorro,0,69
+22,Iaai,0,21
+23,Maori,0,451
+24,Hawaiian,0,2020
+25,Antakarinya,0,178
+26,Alawa,0,147
+27,Sentani,0,74
+28,Kwoma,0,31
+29,Tamnim Citak,0,19
+30,Telefol,0,2130
+31,Gadsup,0,1311
+32,Awiyaana,0,1917
+33,Kunimaipa,0,1857
+34,Selepet,0,759
+35,Naasioi,0,1855
+36,Kalaallisut,0,0
+37,Tolowa-Chetco,0,81
+38,Hupa,0,123
+39,Navajo,0,2140
+40,Northern Haida,0,80
+41,Squamish,0,50
+42,Northern Straits Salish,0,490
+43,Nuu-chah-nulth,0,614
+44,Kwak'wala,0,112
+45,Eastern Ojibwa,0,213
+46,Unami,0,415
+47,Wichita,0,390
+48,Lakota,0,834
+49,Seneca,0,427
+50,Oneida,0,375
+51,Yuchi,0,247
+52,Alabama,0,89
+53,Nez Perce,0,1041
+54,Northeast Maidu,0,1271
+55,Papantla Totonac,0,89
+56,Purepecha,0,2340
+57,Karok,0,676
+58,Southeastern Pomo,0,439
+59,Zuni,0,2210
+60,Rio Grande Tewa,0,1687
+61,Luiseno,0,742
+62,Hopi,0,1713
+63,Tohono O'odham,0,640
+64,Mezquital Otomi,0,2391
+65,Páez,0,3472
+66,Itonama,0,169
+67,Jaqaru,0,2766
+68,Mapudungun,0,1538
+69,Island Carib,0,758
+70,Wapishana,0,130
+71,Asháninka,0,497
+72,Ignaciano,0,159
+73,Yanesha',0,2474
+74,Shuar,0,1256
+75,Waimaha,0,167
+76,Ticuna,0,150
+77,Galibi Carib,0,6
+78,Ocaina,0,114
+79,Sirionó,0,182
+80,Amahuaca,0,429
+81,Chácobo,0,185
+82,Apinayé,0,229
+83,Awngi,0,2024
+84,Modern Hebrew,0,515
+85,Liberia Kpelle,0,285
+86,Wolof,0,53
+87,Dagbani,0,181
+88,Ewe,0,114
+89,Igbo,0,8
+90,Beembe,0,358
+91,Luvale,0,1078
+92,Zulu,0,537
+93,Gbaya-Bossangoa,0,476
+94,Luo (Kenya and Tanzania),0,1467
+95,Irish,0,88
+96,Norwegian Bokmål,0,20
+97,English,0,22
+98,Portuguese,0,445
+99,Romanian,0,348
+100,Modern Greek,0,190
+101,Bengali,0,8
+102,Sinhala,0,51
+103,Eastern Mari,0,45
+104,Turkish,0,1138
+105,North Azerbaijani,0,276
+106,Chukchi,0,0
+107,Japanese,0,127

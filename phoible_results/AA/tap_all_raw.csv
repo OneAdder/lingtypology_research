@@ -1,0 +1,193 @@
+,language,tap,elevation
+band1345,Banda-Ndélé,3,824
+bial1238,Biali,1,147
+bini1246,Bini,1,126
+cent2050,Central Kanuri,2,314
+gbay1288,Gbaya (Sudan),2,596
+gude1246,Gude,1,874
+haus1257,Hausa,2,600
+jola1263,Jola-Fonyi,1,31
+kiku1240,Kikuyu,1,2715
+kuri1259,Kuria,1,1176
+mang1394,Mangbetu,1,736
+murl1244,Murle,1,452
+nort2775,Northwest Gbaya,1,961
+nucl1347,Wolof,1,53
+pula1263,Pulaar,1,47
+soni1259,Soninke,1,157
+0,Abidji,0,96
+1,Adioukrou,0,68
+2,Aja (Benin),0,152
+3,Anyin Morofo,0,79
+4,Igo,0,722
+5,Akan,0,166
+6,Akoose,0,859
+7,Ngas,0,1130
+8,Anufo,0,137
+9,Sudanese Arabic,0,504
+10,Avokaya,0,853
+11,Vengo,0,1680
+12,Bafut,0,822
+13,Baka (Cameroon),0,548
+14,Bambara,0,386
+15,Bandi,0,385
+16,Baoulé,0,9
+17,Baatonum,0,379
+18,Basa (Cameroon),0,179
+19,Bassa,0,56
+20,Ntcham,0,243
+21,Gagnoa Bété,0,211
+22,Bekwarra,0,96
+23,Berom,0,1221
+24,Beng,0,214
+25,Bhele,0,1142
+26,Bimoba,0,177
+27,Bissa,0,263
+28,Northern Bobo Madaré,0,467
+29,Boko (Benin),0,320
+30,Hainyaxo Bozo,0,283
+31,Bulu (Cameroon),0,706
+32,Cerma,0,314
+33,Chumburung,0,93
+34,Daba,0,813
+35,Central Dagaare,0,342
+36,Northern Dagara,0,305
+37,Dagbani,0,181
+38,Dan,0,324
+39,Adangme,0,50
+40,Dazaga,0,304
+41,Luo (Kenya and Tanzania),0,1467
+42,Lakota Dida,0,165
+43,Dyula,0,274
+44,Ditammari,0,313
+45,Doyayo,0,309
+46,Toro So Dogon,0,279
+47,Duala,0,9
+48,Duruma,0,221
+49,Ebira,0,200
+50,Ewe,0,114
+52,Ejagham,0,220
+53,Emai-Iuleha-Ora,0,148
+54,Engenni,0,20
+55,Ewondo,0,593
+56,Fe'fe',0,1444
+57,Fon,0,154
+58,Adamawa Fulfulde,0,370
+59,Central-Eastern Niger Fulfulde,0,471
+60,Maasina Fulfulde,0,298
+61,Western Niger Fulfulde,0,293
+62,Fuliiru,0,1629
+63,Ga,0,94
+64,Ngangam,0,161
+65,Gbaya-Bossangoa,0,476
+66,Gen,0,0
+67,Godié,0,205
+68,Gonja,0,93
+69,Northern Grebo,0,205
+70,Gourmanchéma,0,201
+71,Hanga,0,153
+72,Ifè,0,214
+73,Igbo,0,8
+74,Igede,0,76
+75,Southeast Ijo,0,7
+77,Izi,0,72
+78,Jur Modo,0,492
+79,Kabiyé,0,191
+80,Kako,0,594
+81,Baangi,0,410
+82,Western Karaboro,0,292
+83,Karang,0,596
+84,Kasem,0,277
+85,Koonzime,0,675
+86,Northern Kissi,0,416
+87,Kom (Cameroon),0,1789
+88,Komo (Democratic Republic of Congo),0,586
+89,Konkomba,0,149
+90,Liberia Kpelle,0,285
+91,Guinea Kpelle,0,446
+92,Krio,0,11
+93,Tepo Krumen,0,192
+94,Kusaal,0,173
+95,Lama (Togo),0,457
+96,Lele (Chad),0,399
+97,Lendu,0,1676
+98,Loma (Liberia),0,474
+99,Loko,0,90
+100,Ligbi,0,315
+101,West-Central Limba,0,63
+102,Limbum,0,1057
+103,Lingala,0,342
+104,Lukpa,0,397
+105,Ganda,0,1295
+106,Lugbara,0,1225
+107,Lyélé,0,275
+108,Donga Mambila,0,781
+109,Western Mambila,0,1281
+110,Mampruli,0,152
+111,Western Maninkakan,0,71
+112,Eastern Maninkakan,0,632
+113,Kita Maninkakan,0,344
+114,Mündü,0,872
+115,Cross River Mbembe,0,41
+116,Mbo (Cameroon),0,835
+117,Makaa,0,693
+118,Mende (Sierra Leone),0,172
+119,Meta',0,1032
+120,Mamara Senoufo,0,323
+121,Deg,0,163
+122,Mofu-Gudur,0,730
+123,Mossi,0,157
+124,Mwan,0,281
+125,Mundani,0,321
+126,Kituba (Congo),0,466
+127,Mwaghavul,0,1330
+128,Nafaanra,0,307
+129,Nawdm,0,333
+130,Northern Nuni,0,285
+131,Nomaande,0,759
+132,Ngambay,0,479
+133,Ngbaka Minagende,0,363
+134,Northern Ngbandi,0,404
+135,Ngiemboon,0,1797
+136,Nyabwa,0,254
+137,Lamnso',0,1352
+138,Nugunu (Cameroon),0,481
+139,Nupe-Nupe-Tako,0,127
+140,Ma'di,0,1387
+141,Parkwa,0,541
+142,Pular,0,123
+143,Rendille,0,532
+144,Sabaot,0,3036
+145,Sango,0,503
+146,Senara Sénoufo,0,361
+147,Sereer,0,4
+148,Sissala of Burkina Faso,0,292
+149,Koyra Chiini Songhay,0,264
+150,Susu,0,238
+151,Swahili,0,200
+152,Tawallammat Tamajaq,0,282
+153,Tamasheq,0,292
+154,Tarok,0,210
+155,Téén,0,329
+156,Tedaga,0,477
+157,Tem,0,383
+158,Tofin Gbe,0,0
+159,Timne,0,48
+160,Tikar,0,815
+161,Toposa,0,458
+162,Toura (Côte d'Ivoire),0,546
+163,Northern Toussian,0,417
+164,Vagla,0,345
+165,Vute,0,894
+166,Waama,0,477
+167,Wan,0,274
+168,Wobe-Wè Northern,0,314
+169,Yamba,0,1160
+170,Yambeta,0,717
+171,Yaouré,0,235
+172,Yemba,0,1324
+173,Yom,0,418
+174,Yoruba,0,105
+175,Zande,0,638
+176,Zarma-Kaado,0,178
+177,Zulgo-Gemzek,0,719

@@ -1,0 +1,410 @@
+,language,tap,elevation
+abua1244,Abua,1,10
+acol1236,Acoli,1,867
+ajas1235,Aja (Sudan),2,609
+arbo1245,Arbore,2,504
+argo1244,Argobba,1,2752
+arin1244,Aringa,1,870
+ashe1269,Ashe,1,667
+baka1274,Baka (Sudan),2,885
+bana1305,Bana,2,851
+bela1256,Belanda Bor,1,514
+dagi1241,Dagik,2,454
+defa1248,Defaka,1,6
+didi1258,Didinga,1,1818
+dime1235,Dime,1,1906
+ejag1239,Ejagham,1,220
+eten1239,Eten,5,1256
+fali1285,Fali,1,776
+gaaa1245,Gaa,1,545
+gaam1241,Gaam,1,898
+gamo1243,Gamo,1,1077
+gava1241,Gavar,1,622
+gude1246,Gude,2,874
+guro1248,Guro,1,276
+gwan1268,Gwandara,6,748
+heib1243,Ebang,1,835
+here1253,Herero,1,1144
+idom1241,Idoma,1,236
+irig1241,Irigwe,3,1082
+kare1338,Kare (Central African Republic),1,997
+kima1244,Kimaragang,1,258
+koal1240,Koalib-Rere,1,732
+koor1239,Koorete,1,2321
+kuoo1238,Kuo,1,568
+lagw1237,Lagwan,1,300
+lang1322,Lango (Sudan),1,776
+leng1258,Lengola,2,468
+lese1243,Lese,3,973
+logo1259,Logo,1,901
+long1387,Longto,1,441
+lumu1239,Lumun,2,728
+luwo1239,Luwo,1,496
+mach1266,Machame,2,1072
+mada1282,Mada (Nigeria),2,470
+mawa1270,Mawa (Chad),1,544
+mbay1241,Mbay,1,460
+mfum1238,Southern Mfumte,1,662
+mofu1248,Mofu-Gudur,1,730
+mono1269,Mono (Cameroon),1,233
+moro1284,Morokodo,1,574
+mund1325,Mundang,1,390
+ndai1238,Ndai,1,636
+ndog1248,Ndogo,2,460
+ngas1238,Ngasa,1,1807
+njeb1242,Njebi,1,728
+nucl1683,Daba,1,813
+orma1241,Orma,1,141
+otor1240,Otoro,1,752
+otuh1238,Otuho,2,809
+sand1273,Sandawe,1,1208
+sher1258,Sherbro,1,13
+shwa1239,Shwai,1,721
+suga1248,Nizaa,2,1263
+tach1250,Tachelhit,1,904
+tada1238,Tadaksahak,2,313
+tiey1235,Tiéyaxo Bozo,1,275
+tigo1236,Tigon Mbembe,6,255
+tigr1271,Tigrinya,1,2332
+tira1254,Tira,1,638
+toch1257,Tocho,1,661
+tsot1241,Tsotso,1,1459
+tupu1244,Tupuri,1,353
+uppe1455,Upper Guinea Crioulo,1,44
+wehh1238,Weh,1,1065
+west2458,West Central Banda,2,637
+yems1235,Yemsa,1,2227
+0,Adamawa Fulfulde,0,370
+1,Anyin,0,181
+2,Anyin Morofo,0,79
+3,Akan,0,166
+4,Anufo,0,137
+5,Dibole,0,321
+6,Bila,0,788
+7,Busa,0,243
+8,Hausa States Fulfulde,0,363
+9,Cebaara Senoufo,0,390
+10,Koyra Chiini Songhay,0,264
+11,Bafia,0,577
+12,Lega-Shabunda,0,633
+13,Limbum,0,1057
+14,Myene,0,26
+15,Ntcham,0,243
+16,Tunen,0,708
+17,Matumbi,0,257
+18,Yao,0,1194
+19,Umbundu,0,1239
+20,Ndonga,0,1095
+21,Mbukushu,0,1010
+22,Diriku,0,1093
+23,Kwangali,0,1124
+24,Soninke,0,157
+25,Koyraboro Senni Songhai,0,261
+26,Lele (Chad),0,399
+28,Mongo,0,381
+29,Xwela Gbe,0,32
+30,Western Xwla Gbe,0,5
+31,Kotafon Gbe,0,60
+32,Gbesi Gbe,0,62
+33,Mbe,0,124
+34,Ngwe,0,992
+35,Jowulu,0,512
+36,Yala,0,65
+37,Mambwe-Lungu,0,1249
+38,Kete,0,889
+39,Kwese,0,795
+40,Southern Ma'di,0,659
+41,Moru,0,651
+42,Afitti,0,568
+43,Avatime,0,171
+44,Dghwede,0,606
+45,Eloyi,0,126
+46,Gikyode,0,257
+47,Ginyanga,0,306
+48,Huba,0,541
+49,Pan,0,242
+50,Krache,0,132
+51,Krim,0,16
+52,South Central Dinka,0,432
+53,Foodo,0,375
+54,Jola-Esulalu,0,18
+55,Jumjum,0,487
+56,Burun,0,575
+57,Olu'bo,0,721
+58,Maay,0,496
+59,Mabaan,0,428
+61,Xhosa,0,1748
+62,Siwu,0,234
+63,Cherepon,0,201
+64,Palor,0,100
+66,Sekpele,0,301
+67,Mampruli,0,152
+68,Tonga (Zambia),0,944
+69,Jaad-Badyara,0,62
+70,Selee,0,364
+71,Tiv,0,208
+72,Bilin,0,1678
+73,Xamtanga,0,2165
+74,Liko,0,763
+75,Yansi,0,355
+76,Budu,0,778
+77,Kele-Foma,0,424
+78,Keliko,0,1167
+79,Wongo,0,483
+80,Mwali Comorian,0,257
+81,Afar,0,323
+82,Bambassi,0,1454
+83,Karamojong,0,1142
+84,Avikam,0,11
+85,Shilluk,0,399
+86,Hai//om,0,1418
+87,Pero,0,319
+88,Borana-Arsi-Guji Oromo,0,733
+89,Hadiyya,0,2166
+90,Wolaytta,0,1324
+91,Kunyi,0,159
+92,Masaaba,0,1666
+93,Kamwe,0,576
+94,Manya,0,568
+95,Saya,0,596
+96,Kambaata,0,2120
+97,Nyam,0,244
+98,East Taa,0,1127
+99,Kagulu,0,1176
+101,North-Central Ju,0,1653
+102,Ghomálá',0,1552
+103,Tee,0,25
+104,Kipsigis,0,1984
+105,Pangwa,0,1313
+106,Holoholo,0,798
+107,Buli (Ghana),0,204
+108,Balanta-Ganja,0,21
+109,Nyambo,0,1513
+110,Dan,0,324
+111,Pökoot,0,1866
+112,Afrikaans,0,581
+113,Harari,0,1841
+114,Nzima,0,19
+115,Ahanta,0,37
+117,Buwal,0,600
+118,Hdi,0,588
+119,Lamang,0,1015
+120,Ikwere,0,24
+121,Gbaya-Mbodomo,0,697
+122,Mbuko,0,480
+123,Moloko,0,454
+124,Muyang,0,410
+125,Ngomba,0,1454
+126,Kemezung,0,910
+127,Nateni,0,454
+128,Silt'e,0,2047
+129,Tulishi,0,623
+130,Keiga,0,511
+131,Krongo,0,453
+132,Kanga,0,473
+133,Katcha-Kadugli-Miri,0,473
+134,Tese,0,618
+135,Acheron,0,927
+136,Belanda Viri,0,501
+137,Bade,0,341
+138,Pichi,0,66
+139,Jita,0,1286
+140,Jamsay Dogon,0,280
+141,Kamba (Kenya),0,971
+142,Lango (Uganda),0,1052
+143,Kisa,0,1434
+144,Nyole,0,1066
+145,Mwani,0,18
+146,Kgalagadi,0,1046
+147,Alaba-K'abeena,0,2073
+148,Degema,0,1
+149,Principense,0,469
+150,Nkonya,0,95
+152,Kistane,0,2644
+153,Mesqan,0,2134
+154,Sebat Bet Gurage,0,2272
+158,Inor,0,2043
+159,Dzùùngoo,0,376
+160,Bagirmi,0,302
+161,Ngiti,0,1617
+162,Ndali,0,1134
+163,Me'en,0,1009
+164,Northern Gumuz,0,837
+165,Soo,0,1901
+166,Bench,0,2236
+168,Aari,0,1513
+169,Komo (Sudan),0,767
+170,Uduk,0,862
+171,T'apo,0,419
+172,Kwama,0,1286
+173,Mayogo,0,760
+174,Saamia,0,1194
+175,Southern Nuni,0,327
+176,Zimbabwean Ndebele,0,1179
+177,Saxwe Gbe,0,76
+178,Narim,0,578
+179,Kangaki-Kagbaaga-Kajoko Bidyogo,0,15
+180,Dompo,0,228
+181,Bambara,0,386
+182,Koyaga,0,365
+183,Kuanyama,0,1128
+184,Mbalanhu,0,1310
+185,Kwambi,0,1091
+186,Ngandyera,0,1079
+187,Konkomba,0,149
+188,Beria,0,978
+189,Zay,0,1636
+190,Bomitaba,0,316
+191,Northern Bobo Madaré,0,467
+192,Bena (Tanzania),0,1738
+193,Guinea Kpelle,0,446
+194,Kakabe,0,996
+195,Lele (Guinea),0,925
+196,Loma (Liberia),0,474
+197,Mann,0,244
+198,Kyenga,0,203
+199,Shanga,0,156
+200,Abure,0,4
+201,Bankon,0,84
+203,Aghem,0,1047
+204,Abidji,0,96
+205,Adioukrou,0,68
+206,Tiagbamrin Aizi,0,17
+207,Alladian,0,14
+208,Ngazidja Comorian,0,475
+209,Akpes,0,294
+210,Nuer,0,409
+211,Ut-Main,0,323
+212,Izere,0,1041
+213,Jere,0,876
+214,Legbo,0,29
+215,Logba,0,157
+216,Awngi,0,2024
+217,Glavda,0,410
+218,Àhàn,0,302
+219,Ayere,0,396
+220,Ronga,0,69
+221,Ndzwani Comorian,0,547
+222,Southern Birifor,0,218
+223,Kuwaataay,0,5
+224,Attié,0,72
+225,Angolar,0,104
+226,Eastern Oromo,0,1408
+227,Akoose,0,859
+228,Bakaka,0,517
+229,Mbo (Cameroon),0,835
+230,Bassossi,0,325
+231,Kru Pidgin English,0,42
+232,Gban,0,166
+233,Eton-Mengisa,0,516
+234,Réunion Creole French,0,1722
+235,Masalit,0,815
+236,Sãotomense,0,1073
+237,Tangale,0,565
+238,Sukuma,0,1166
+239,Morisyen,0,464
+240,Krio,0,11
+241,Kituba (Democratic Republic of Congo),0,342
+242,Akaselem,0,319
+243,Tuki,0,581
+244,Baka (Cameroon),0,548
+245,Bum,0,1322
+246,Igo,0,722
+247,Kako,0,594
+248,Kwanja,0,1014
+249,Donga Mambila,0,781
+250,Merey,0,787
+251,Wandala,0,339
+252,Chonyi-Dzihana-Kauma,0,65
+253,Digo,0,19
+254,Duruma,0,221
+255,Giryama,0,122
+258,Vame,0,412
+259,Mmaala,0,484
+260,Mpade,0,290
+261,Mbe',0,754
+262,Ncane,0,960
+263,Njyem,0,595
+264,Buamu,0,319
+265,Kwami,0,708
+266,Kabuverdianu,0,467
+267,Bouna Kulango,0,251
+268,Tsamai,0,741
+269,Central Moroccan Berber,0,1354
+270,Siwi,0,-7
+271,Ndamba,0,280
+272,Barain,0,395
+273,Mungbam,0,777
+274,Mundabli,0,730
+275,Ajumbu,0,771
+276,Koshin,0,812
+277,Fang (Cameroon),0,749
+278,Kuranko,0,474
+279,Niellim,0,358
+280,North Giziga,0,488
+282,Mokpwe,0,2301
+283,Siamou,0,542
+284,Ngiemboon,0,1797
+285,Nugunu (Cameroon),0,481
+286,Pinyin,0,1841
+287,Reel,0,431
+288,Wuzlam,0,535
+289,Toura (Côte d'Ivoire),0,546
+290,Gweno,0,1062
+291,Sumbwa,0,1204
+292,Zinza,0,1338
+293,Meru,0,1254
+294,Kahe,0,707
+295,Hangaza,0,1353
+296,Mochi,0,892
+297,Suba-Simbiti,0,1294
+298,Kwaya,0,1152
+299,Wawa,0,1214
+300,Tunia,0,364
+301,Fuliiru,0,1629
+302,Tsuvadi,0,257
+303,Yemba,0,1324
+304,Bafanji,0,1171
+305,Burji,0,1406
+306,Anii,0,395
+307,Fipa,0,1821
+308,Nawuri,0,120
+309,Anfillo,0,1472
+310,Ntomba,0,292
+311,Tumtum,0,487
+312,Iyive,0,380
+313,Batak Karo,0,7
+314,Tagalog,0,93
+315,Southern Sama,0,21
+316,Lemeting,0,18
+317,Iloko,0,287
+318,Eastern Cham,0,24
+319,Moklen,0,17
+320,Moken,0,0
+321,Nias,0,0
+322,Javanese,0,112
+323,Buol,0,134
+324,Makasar,0,0
+325,Mori Bawah,0,541
+326,Kambera,0,325
+327,Tetum,0,317
+328,Leti (Indonesia),0,252
+329,East Makian,0,308
+330,Biak,0,187
+331,Ambonese Malay,0,176
+332,Banda Malay,0,260
+333,Manado Malay,0,41
+334,Kupang Malay,0,369
+335,Larantuka Malay,0,757
+336,North Moluccan Malay,0,79
+337,Indonesian,0,556
+338,Madurese,0,108
+339,Cebuano,0,372
+340,Balinese,0,1283
+341,Buginese,0,62
+342,Coastal-Naga Bikol,0,182
+343,Hiligaynon,0,74
+344,Pampanga,0,29
+345,Minangkabau,0,10
+346,Pangasinan,0,15
+347,Tengger,0,1226

@@ -1,0 +1,452 @@
+,language,long,elevation
+adze1240,Adzera,3,207
+anga1290,Angaataha,1,1709
+arch1244,Archi,18,1822
+atay1247,Atayal,2,1882
+avar1256,Avar,13,646
+bard1255,Bardi,3,46
+bouy1240,Bouyei,1,774
+brah1256,Brahui,5,1328
+cent1973,Central Pashto,3,1057
+cent1989,Central Khmer,10,26
+chip1261,Chipewyan,6,258
+dera1248,Dera (Nigeria),5,195
+east2542,Eastern Ojibwa,8,213
+egyp1253,Egyptian Arabic,5,6
+eyak1241,Eyak,7,0
+furr1244,Fur,3,874
+gads1258,Gadsup,3,1311
+haka1240,Haka Chin,1,896
+hind1269,Hindi,11,416
+hung1274,Hungarian,7,110
+hupa1239,Hupa,3,123
+iaai1238,Iaai,7,21
+iraq1241,Iraqw,6,1767
+iris1253,Irish,10,88
+iumi1238,Iu Mien,1,1299
+juho1239,South-Eastern Ju,12,1161
+kaba1278,Kabardian,5,1234
+kala1399,Kalaallisut,4,0
+karo1304,Karok,5,676
+kash1277,Kashmiri,14,1623
+khmu1256,Khmu,10,953
+kumi1248,Tipai,4,297
+lakk1238,Lakkia,10,767
+lakk1252,Lak,20,2018
+lish1246,Lishán Didán,6,1635
+lith1251,Lithuanian,6,54
+nava1243,Navajo,8,2140
+ngas1240,Ngas,4,1130
+ngiz1242,Ngizim,3,360
+noon1243,Noone,7,1277
+nort2641,Northern Kurdish,5,697
+norw1259,Norwegian Bokmål,9,20
+nucl1347,Wolof,12,53
+ocai1244,Ocaina,3,114
+papa1238,Papantla Totonac,3,89
+selk1253,Selkup,9,71
+sinh1246,Sinhala,7,51
+stan1290,French,2,124
+stan1295,German,8,368
+taha1241,Tahaggart Tamahaq,5,760
+telu1262,Telugu,7,440
+tigr1270,Tigre,5,2112
+tonk1249,Tonkawa,5,86
+trum1247,Trumai,1,284
+tulu1258,Tulu,6,86
+wara1290,Warray,4,29
+wich1260,Wichita,7,390
+0,Afade,0,293
+1,Achumawi,0,1258
+2,Eastern Arrernte,0,720
+3,Amele,0,161
+4,Aghem,0,1047
+5,Aproumu Aizi,0,24
+6,Ahtena,0,0
+7,Hokkaido Ainu,0,216
+8,Akan,0,166
+9,Akawaio,0,970
+10,Alabama,0,89
+11,Qawasqar,0,80
+12,Alladian,0,14
+13,Aleut,0,82
+14,Alawa,0,147
+15,Northern Tosk Albanian,0,88
+16,Amahuaca,0,429
+17,Yanesha',0,2474
+18,Hamer-Banna,0,1012
+19,Amharic,0,3440
+20,Amo,0,784
+21,Alamblak,0,77
+22,Guerrero Amuzgo,0,378
+23,Andoque,0,181
+24,Antakarinya,0,178
+25,Apinayé,0,229
+26,Apucikwar,0,58
+27,Arabela,0,182
+28,Mapudungun,0,1538
+29,Waorani,0,259
+30,Awngi,0,2024
+31,Abipon,0,65
+32,North Azerbaijani,0,276
+33,Bashkir,0,231
+34,Bambara,0,386
+35,Waimaha,0,167
+36,Baatonum,0,379
+37,Batak Toba,0,948
+38,Bats,0,1048
+39,Northern Bobo Madaré,0,467
+40,Central Bai,0,3046
+41,Kohumono,0,23
+42,Indonesian Bajau,0,37
+43,Tweed-Albert,0,51
+44,Beja,0,348
+45,Bengali,0,8
+46,Beembe,0,358
+47,Daloa Bété,0,234
+48,Bissa,0,263
+49,Bakairí,0,428
+50,Bella Coola,0,852
+51,Muinane,0,177
+52,Berom,0,1221
+53,Bororo,0,180
+54,Brao,0,581
+55,Breton,0,143
+56,Western Bru,0,161
+57,Bodo-Mech,0,114
+58,Burushaski,0,3309
+59,Bulgarian,0,98
+60,Burarra,0,36
+61,Qaqet,0,941
+62,Bribri,0,706
+63,Caddo,0,377
+64,Nivaclé,0,209
+65,Car Nicobarese,0,30
+66,Galibi Carib,0,6
+67,Cha'palaa,0,122
+68,Nyahkur,0,556
+69,Kakua,0,155
+70,Min Dong Chinese,0,6
+71,Chamorro,0,69
+72,Quiotepec Chinantec,0,1441
+73,Cherokee,0,1159
+74,Chuvash,0,95
+75,Western Cham,0,35
+76,Upper Chehalis,0,35
+77,Chuave,0,2050
+78,Chukchi,0,0
+79,Mandarin Chinese,0,88
+80,Asháninka,0,497
+81,Cofán,0,342
+82,Wamey,0,79
+83,Chuanqiandian Cluster Miao,0,1077
+84,Island Carib,0,758
+85,Tedim Chin,0,1359
+86,Western Highland Chatino,0,1344
+87,Cubeo,0,192
+88,Cayubaba,0,141
+89,Dangaleat,0,459
+90,Dan,0,324
+91,Dagbani,0,181
+92,Dar Fur Daju,0,609
+93,Dahalo,0,20
+94,Nyishi-Hill Miri,0,996
+95,Dyirbal,0,858
+96,Dieri,0,19
+97,Northeastern Dinka,0,401
+98,Lower Grand Valley Dani,0,2969
+99,Northern Dong,0,512
+100,Doyayo,0,309
+101,Rukai,0,1689
+102,Dagur,0,167
+103,Toro So Dogon,0,279
+104,Dhuwal,0,99
+105,Jola-Fonyi,0,31
+106,Efik,0,25
+107,Ekari,0,1658
+108,Modern Greek,0,190
+109,Central Siberian Yupik,0,0
+110,Ejagham,0,220
+111,Basque,0,362
+112,Even,0,0
+113,Ewe,0,114
+114,Ewondo,0,593
+115,Fasu,0,217
+116,Nobiin,0,277
+117,Fijian,0,151
+118,Finnish,0,66
+119,Fe'fe',0,1444
+120,Fulniô,0,391
+121,Fwâi,0,126
+122,Ga,0,94
+123,Garrwa,0,205
+124,Gbaya-Bossangoa,0,476
+125,Gbagyi,0,261
+126,Central Gelao-Qau,0,1275
+127,Nanai,0,34
+128,Dawro,0,1936
+129,Wayuu,0,37
+130,Paraguayan Guaraní,0,184
+131,Guahibo,0,88
+132,Guambiano,0,1725
+133,Aché,0,158
+134,Kuku-Yalanji,0,236
+135,Hakka Chinese,0,365
+136,Hausa,0,600
+137,Hawaiian,0,2020
+138,Northern Haida,0,80
+139,Hixkaryána,0,341
+140,Hopi,0,1713
+141,Hadza,0,1277
+142,Huastec,0,69
+143,San Mateo del Mar Huave,0,5
+144,Eastern Armenian,0,1912
+145,Iban,0,121
+146,Igbo,0,8
+147,Ignaciano,0,159
+148,Izon,0,5
+149,Ik,0,1739
+150,Irarutu,0,65
+151,Irántxe-Münkü,0,403
+152,Isoko,0,16
+153,West Itelmen,0,124
+154,Itonama,0,169
+155,Itbayat,0,97
+156,Iwam,0,26
+157,Popti',0,2060
+158,Yanyuwa,0,57
+159,Javanese,0,112
+160,Jebero,0,242
+161,Tol,0,773
+162,Shuar,0,1256
+163,Japanese,0,127
+164,Jaqaru,0,2766
+165,Japrería,0,859
+166,Southern Jinghpaw,0,147
+167,Georgian,0,1338
+168,Camsá,0,2387
+169,Grass Koiari,0,767
+170,Kafa,0,1743
+171,Dera (Indonesia),0,332
+172,Kazym-Berezover-Suryskarer Khanty,0,54
+173,Kekchí,0,28
+174,Kera,0,328
+175,Ket,0,176
+176,Kota (India),0,1456
+177,Koya,0,111
+178,Kaingang,0,662
+179,Khasi,0,38
+180,Lü,0,1101
+181,Halh Mongolian,0,1305
+182,Lusi,0,92
+183,Kharia,0,376
+184,Kiowa,0,450
+185,Kirghiz,0,3699
+186,Southern Kiwai,0,37
+187,Western Keres,0,1852
+188,East Kewa,0,1942
+189,Teke-Kukuya,0,530
+190,Klamath-Modoc,0,1299
+191,Klao,0,66
+192,Kwoma,0,31
+193,Central Kanuri,0,314
+194,Maharashtrian Konkani,0,723
+195,Korean,0,154
+196,Kpan,0,139
+197,Koho,0,871
+198,Komi-Zyrian,0,125
+199,Koryak,0,0
+200,Kupsabiny,0,2719
+201,Kurukh,0,284
+202,S'gaw Karen,0,246
+203,Kalkutung,0,435
+204,Kunama,0,1058
+205,Kunimaipa,0,1857
+206,Border Kuna,0,460
+207,Kwaio,0,564
+208,Kwak'wala,0,112
+209,Lelemi,0,519
+210,Lugbara,0,1225
+211,Lahu,0,1476
+212,Lakota,0,834
+213,Peve,0,328
+214,Luiseno,0,742
+215,Luo (Kenya and Tanzania),0,1467
+216,Northern Lushootseed,0,92
+217,Chiquihuitlán Mazatec,0,1897
+218,Masai,0,1187
+219,Central Mazahua,0,2941
+220,Maxakalí,0,294
+221,Donga Mambila,0,781
+222,Mbum,0,830
+223,Maba (Chad),0,509
+224,Dizin,0,2094
+225,Mba,0,456
+226,Mogholi,0,942
+227,Eastern Mari,0,45
+228,San Miguel El Grande Mixtec,0,2279
+229,Tu,0,2746
+230,Manchu,0,187
+231,Mor (Bomberai Peninsula),0,27
+232,Moro,0,745
+233,Mullukmulluk,0,40
+234,Mawng,0,28
+235,Dadibi,0,1267
+236,West Makian,0,392
+237,Marghi Central,0,426
+238,Maranao,0,969
+239,Totontepec Mixe,0,1423
+240,Murle,0,452
+241,Murriny Patha,0,0
+242,Kala Lagaw Ya,0,137
+243,Burmese,0,711
+244,Pirahã,0,75
+245,Mumuye,0,543
+246,Movima,0,146
+247,Southern Nambikuára,0,687
+248,Min Nan Chinese,0,35
+249,Nama (Namibia),0,1170
+250,Naasioi,0,1855
+251,Naxi,0,3607
+252,Northern Puebla Nahuatl,0,1496
+253,Ndut,0,35
+254,Eastern Pahari,0,3212
+255,Kathmandu Valley Newari,0,288
+256,Nez Perce,0,1041
+257,Niellim,0,358
+258,Nganasan,0,0
+259,Nimboran,0,61
+260,Nivkh,0,365
+261,Ao Naga,0,605
+262,Northeast Maidu,0,1271
+263,Nuu-chah-nulth,0,614
+264,Nara,0,788
+265,Nung (Viet Nam),0,703
+266,Wubuy,0,6
+267,Ama (Sudan),0,697
+268,Nyang'i,0,1369
+269,Ogbia,0,21
+270,Tohono O'odham,0,640
+271,Ormuri,0,2281
+272,Pacoh,0,757
+273,Pech,0,411
+274,Páez,0,3472
+275,Panare,0,52
+276,Western Farsi,0,2174
+277,Plateau Malagasy,0,1653
+278,Southeastern Pomo,0,439
+279,Pohnpeian,0,537
+280,South Wa,0,1866
+281,Paiwan,0,608
+282,Pwo Northern Karen,0,1113
+283,South Bolivian Quechua,0,4156
+284,Quileute,0,16
+285,Resígaro,0,127
+286,Romanian,0,348
+287,Rotokas,0,283
+288,Waima,0,9
+289,Russian,0,185
+290,Rutul,0,1950
+291,Sandawe,0,1208
+292,Sango,0,503
+293,Sakha,0,875
+294,Sedang,0,1287
+295,Seneca,0,427
+296,Cebaara Senoufo,0,390
+297,Koyraboro Senni Songhai,0,261
+298,Sentani,0,74
+299,Ninam,0,575
+300,Tachelhit,0,904
+301,Shuswap,0,660
+302,Shasta,0,1111
+303,Epena,0,22
+304,Southern Sierra Miwok,0,780
+305,Sáliba,0,119
+306,South Saami,0,141
+307,Siona-Tetete,0,236
+308,Sa'ban,0,1002
+309,Somali,0,211
+310,Spanish,0,1202
+311,Selepet,0,759
+312,Soqotri,0,929
+313,Sirionó,0,182
+314,Natügu,0,0
+315,Suena,0,68
+316,Savosavo,0,365
+317,Sui,0,276
+318,Eastern Tamang,0,1864
+319,Aikanã,0,520
+320,Gaam,0,898
+321,Ticuna,0,150
+322,Tehuelche,0,299
+323,Timne,0,48
+324,Temein,0,842
+325,Tetum,0,317
+326,Tigak,0,44
+327,Tagalog,0,93
+328,Thai,0,3
+329,Tiwi,0,74
+330,Tiruray,0,435
+331,Tlingit,0,656
+332,Tasomi-Tata,0,486
+333,Tama (Chad),0,1045
+334,Tamnim Citak,0,19
+335,Tacana,0,207
+336,Lenakel,0,219
+337,Tampulma,0,129
+338,Acatepec Me'phaa,0,504
+339,Toaripi,0,7
+340,Southern-Coastal Tsimshian,0,278
+341,Tsou,0,989
+342,Purepecha,0,2340
+343,Tera,0,363
+344,Tunica,0,40
+345,Turkish,0,1138
+346,Taos Northern Tiwa,0,2143
+347,Tuvinian,0,613
+348,Tzeltal,0,2091
+349,Ngarinyin,0,511
+350,Mundari,0,50
+351,Northern Uzbek,0,52
+352,Vanimo,0,197
+353,Vietnamese,0,8
+354,Mbabaram,0,341
+355,Wappo,0,59
+356,Wapishana,0,130
+357,Warao,0,26
+358,Wahgi,0,2160
+359,Wik-Mungkan,0,32
+360,Wintu,0,157
+361,Wiyot,0,449
+362,Wantoat,0,1967
+363,Usan,0,724
+364,Kamang,0,839
+365,Waris,0,640
+366,Berta,0,897
+367,Wu Chinese,0,205
+368,Ngiyambaa,0,153
+369,Kawaiisu,0,1560
+370,Komo (Sudan),0,767
+371,Liberia Kpelle,0,285
+372,Katcha-Kadugli-Miri,0,473
+373,Yagua,0,97
+374,Yaqui,0,788
+375,Yucuna,0,164
+376,Tarok,0,210
+377,Yagaria,0,1810
+378,Yidiñ,0,7
+379,Northern Yukaghir,0,0
+380,Yana,0,25
+381,Yoruba,0,105
+382,Yareba,0,223
+383,Tundra Nenets,0,0
+384,Yessan-Mayo,0,21
+385,Yucatec Maya,0,86
+386,Yuchi,0,247
+387,Yue Chinese,0,-3
+388,Yulu,0,680
+389,Yawa,0,852
+390,Zande,0,638
+391,Copainalá Zoque,0,526
+392,Zulu,0,537
+393,Zuni,0,2210

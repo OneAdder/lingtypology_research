@@ -1,0 +1,25 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+
+%opening
+\title{Python Library for Linguistic Typology}
+\author{Michael Voronov}
+
+\begin{document}
+
+\maketitle
+
+\pagebreak
+
+\iffalse
+\section{This is section 1}
+\begin{enumerate}[\thesection .1]
+\item This is item 1.1
+\item This is item 1.2
+\end{enumerate}
+\fi
+
+\section{Abstract}
+There exist multiple 
+\end{document}

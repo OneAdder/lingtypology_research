@@ -1,0 +1,421 @@
+\documentclass[a4paper,12pt]{article}
+
+%%Стадартное
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+%%% Работа с русским языком
+%\usepackage{cmap}					% поиск в PDF
+%\usepackage{mathtext} 				% русские буквы в формулах
+%\usepackage[T2A]{fontenc}			% кодировка
+%\usepackage[utf8]{inputenc}			% кодировка исходного текста
+%\usepackage[russian, english]{babel}	% локализация и переносы
+
+
+% Лингвистика
+\usepackage{gb4e}
+\usepackage{qtree}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguage{russian}
+\usepackage[shortcuts]{extdash}
+include
+\usepackage{soul} 
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{libertine} 
+%\setmainfont{Times New Roman}
+
+% Библиография
+\usepackage[autostyle]{csquotes}
+
+\usepackage[backend=biber,style=authoryear]{biblatex}
+\addbibresource{mybiblio.bib}
+
+%\DeclareBibliographyCategory{ignore}
+
+% Библиографию в оглавление
+\usepackage[nottoc]{tocbibind}
+
+%% Перенос знаков в формулах (по Львовскому)
+\newcommand*{\hm}[1]{#1\nobreak\discretionary{}
+	{\hbox{$\mathsurround=0pt #1$}}{}}
+
+%%% Работа с картинками
+\usepackage{graphicx}  % Для вставки рисунков
+%\graphicspath{{images/}{images2/}}  % папки с картинками
+\setlength\fboxsep{3pt} % Отступ рамки \fbox{} от рисунка
+\setlength\fboxrule{1pt} % Толщина линий рамки \fbox{}
+\usepackage{wrapfig} % Обтекание рисунков текстом
+
+%%% Работа с таблицами
+\usepackage{array,tabularx,tabulary,booktabs} % Дополнительная работа с таблицами
+\usepackage{longtable}  % Длинные таблицы
+\usepackage{multirow} % Слияние строк в таблице
+
+%%% Страница
+%\usepackage{extsizes} % Возможность сделать 14-й шрифт
+%\usepackage{geometry} % Простой способ задавать поля
+%	\geometry{top=25mm}
+%	\geometry{bottom=35mm}
+%	\geometry{left=35mm}
+%	\geometry{right=20mm}
+
+\usepackage{caption}\usepackage{array,tabularx,tabulary,booktabs}
+
+
+\usepackage{setspace} % Интерлиньяж
+
+
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+{\normalfont\Large\bfseries\flushleft}{\chaptertitlename\ \thechapter}{0.2em}{\LARGE}
+\titleformat{\section}
+{\normalfont\large\bfseries\flushleft}{\thesection}{0.5em}{}
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries\flushleft}{\thesubsection}{0.5em}{}
+\titlespacing*{\chapter} {0pt}{0em}{1em}
+\titlespacing*{\section} {0pt}{1.5em}{0.5em}
+\titlespacing*{\subsection} {0pt}{1em}{0.25em}
+
+% Таблички
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{booktabs}
+\renewcommand\arraystretch{1.1}
+
+% Библиография
+%\usepackage{cite}
+%\usepackage[backend=biber]{biblatex}
+%addbibresourse{mybiblio}
+%\bibliographystyle{unsrt}
+%\usepackage{tikz-dependency}
+
+
+\author{Бибаева Мария}
+\title{Дипломная работа}
+\date{\today}
+
+\begin{document} % конец преамбулы, начало документа
+	
+	\newpage
+	\thispagestyle{empty}
+	\begin{center}
+		\textbf{Правительство Российской Федерации \\
+			Федеральное государственное автономное образовательное \\
+			учреждение высшего образования}
+		\vspace{1cm}
+		
+		\textbf{Национальный исследовательский университет \\ <<Высшая школа экономики>>}
+	\end{center}
+	
+	\vspace{1cm}
+	\begin{flushright}
+		\noindent
+		Факультет гуманитарных наук \\
+		Образовательная программа \\
+		<<Фундаментальная и компьютерная лингвистика>>
+	\end{flushright}
+	
+	\begin{center}
+		Бибаева Мария Александровка \\
+		\vspace{2ex}
+		\textbf{Автоматическое извлечение единиц отрицательной полярности} \\
+		\textit{Automatic extraction of polarity sensitive items}\\
+		\vspace{3ex}
+		Выпускная квалификационная работа студента 4 курса бакалавриата 
+	\end{center}
+	\vspace{3ex}
+	\begin{tabular}{p{0.4\linewidth}p{0.45\linewidth}}
+		Академический~руководитель образовательной программы & Научный руководитель \\
+		канд.~филологических наук, доц. & Доктор наук, доцент\\
+		Ю.А.Ландер & Ф.Тайерс \\
+		& \\ 
+		27 мая 2018 г. & Научный консультант \\
+		& Доктор филологических наук, профессор\\
+		& В.Ю.Апресян\\
+		& \\ 
+	\end{tabular}
+	
+	\begin{center}
+		Москва 2018
+	\end{center}
+	
+	\newpage
+	
+	\tableofcontents
+	\listoftables
+	
+	\newpage
+	
+	\section{Introduction}\label{introduction}
+	
+	Negative and positive polarity items (NPIs and PPIs) have been the subject of research in semantics, formal semantics, syntax, pragmatics and to some extent typology since Klima's survey of negation in English. The main idea underlying this issue is that NPIs are items which have distribution limited to a specific set of contexts. Naturally, every word's distribution is limited somehow, but in case of NPIs these limitations form a special pattern, in which the item's distribution is limited mostly to environments that count as negative in some way. The classical example is the English indefinite pronoun \textit{any}. The (\ref{anybasic}), taken from both \parencite{ladusaw1979} and \parencite{vanderwouden}, demonstrates, that the sentences containing \textit{any}-pronouns can be qualified as grammatical only if they also have a negative marker.
+	
+	\begin{exe}
+		\ex \label{anybasic}
+		\begin{xlist}
+			\ex \label{anybasic1}
+			*John has talked to \underline{any} of the students.
+			\ex \label{anybasic2}
+			*He did \underline{anything} to help her.
+		\end{xlist} 
+		\ex \label{anybasicneg}
+		\begin{xlist}
+			\ex \label{anybasicneg1}
+			John has\textbf{n't} talked to \underline{any} of the students.
+			\ex \label{anybasicneg2}
+			He did\textbf{n't} do \underline{anything} to help her.
+		\end{xlist}  
+	\end{exe}
+	
+	Examples (\ref{anybasic}) and (\ref{anybasicneg}) show only a part of \textit{any}'s distribution as it is not limited to Direct Negation only. There are several other contexts that can \textit{license} polarity items. A full description of all relevant licensing contexts is still a controversial research area, even though a lot of progress has been made here. The issue is that all contexts which can license NPIs must have something in common, and this issue has raised a lot of discussion and research. By now, there are several widely accepted approaches which will be discussed in Section \ref{background}.
+    \par
+	Unfortunately, the majority of literature on NPIs is devoted to a rather small set of items which are mostly indefinite pronouns and other frequent items such as modal verbs and several adverbs and idioms. As demonstrated by examples like \ref{anybasic}, polarity sensitivity is not a special feature of only these classes. The reason for such neglecting is that it is easier to find an NPI among pronouns or modal verbs than among lexical verbs or adjectives, since grammatical meanings which an NPI can have are fairly close and predictable. The same is true for idioms with the meaning of \textit{small amount or activity}, such as (\ref{liftafinger}), which are regularly described as NPIS.
+    
+   	\begin{exe}
+		\ex \label{liftafinger}
+        \begin{xlist}
+			\ex 
+            He did\textbf{n't} \underline{lift a finger} to help her.
+			\ex 
+            *He \underline{lifted a finger} to help her.
+		\end{xlist}
+	\end{exe}
+    \par
+    
+	Therefore, the goal of the current research is to broaden the set of NPIs in Russian language by applying computational methods to corpora and spotting more NPIs in both languages.
+	
+	\section{Theoretical background}\label{background}
+	As was shown in Section \ref{introduction}, the NPIs are items with restricted disctribution, or, as \parencite{vanderwouden} defines them:
+    \begin{exe}
+    	\ex 
+        \textit{NPIs are expressions that can only appear felicitously in negative contexts.}
+    \end{exe}
+    
+    However, this particular definition is not very precise. As mentioned earlier, NPIs can appear not only in the scope of Direct Negation, but in several other contexts which are called \textit{licensing contexts}. For the case of \textit{any}, it can be modified by restrictors like \textit{nearly} and \textit{almost}.
+    
+    \par
+    The issue of licensing conditions is one of the major questions of the field and the base of all research methods at the same time. Every work on polarity sensitive items, computational or theoretical, takes the licensing contexts as a scale of polarization. However, an exhaustive set of relevant feauture has not yet been established. The two major approaches to licensers which have been showing the best results are described in sections \ref{de} and \ref{nonveridicality}.
+	
+	\subsubsection{Downward Entailing}\label{de}
+    
+    The first approach, formulated by \parencite{ladusaw1979}, considers that in order to license an NPI the sentence must be \textit{Downward Entailing}. The notion of \textit{Downward Entailing} can be explained as follows:
+    
+    \begin{exe}
+    	\ex \label{S1}
+        \textit{S1}: Every student must read this article.
+        \ex \label{S2}
+        \textit{S2}: Every first year student must read this article.
+    \end{exe}
+    
+    \textit{S1} entails \textit{S2} as first year students belong to the set of all students, so if every student must read the article then first year students must read it too.
+    
+	
+	
+	\subsubsection{Nonveridicality}\label{nonveridicality}
+    
+    \parencite{giannakidou1}
+	
+    \section{Method}
+    
+    In \parencite{apresyannpi} semantic analysis of Russian polarized verbs and idioms was conducted with the use of corpus methods: a set of verbs and idioms extracted from dictionaries was tested with the use of Russian National Corpus on occurrence in licensing contexts. The items included in the set had examples with negation in the dictionary articles. This criterion was chosen because if example with negation is included in the dictionary article than perhaps such occurrences are more or less typical for this particular item. Some of these items, surely, did not have any significant polarization but for most of them the approach appeared to be justified. As the result, a list of polarity sensitive verbs and idioms of different degrees of polarization was established. However, most data were gathered manually which is not convenient if we want to get larger lists of polarity items. Unfortunately, no computational methods to spot NPIs has ever been applied to Russian.
+    \par
+    One of the earliest examples of the potential of using corpora was \parencite{hoeksema1997}.
+    The article also mentions potential problems with automatic extraction since not all the contexts can be precisely defined (\ref{troublednpi}).
+
+	\begin{exe}
+		\ex \label{troublednpi}
+		\begin{xlist}
+			\ex \label{troubled:a}
+			You say anything, and I'll kill you.
+			\ex \label{troubled:b}
+			*You said anything, and I killed you.
+		\end{xlist} 
+	\end{exe}
+    
+    In (\ref{troublednpi}) it may seem that the tense of the verb is responsible for licensing but this is example is far more complicated. What really licenses \textit{anything} in \ref{troubled:a} is not the tense but the possibility to read the sentence as conditional while \ref{troubled:b} does not provide such opportunity and both clauses can be regarded as veridical.
+    \par
+    Computational approach has been well tested on German data. In series of works by Frank Richter, Jan-Philipp Soehn, Timm Lichte and others, various computational tools were applied to corpora of German languages. In \parencite{multiwordnpiger} the main goal is to extend the \textit{Collection of Distributionally Idiosyncratic Items} (CoDII), the list of all German NPI mentioned in literature which also includes search results for \parencite{lichte2005}
+	
+	\subsubsection{Our licensers}\label{ourlicensers}
+	
+	\par
+	It is important to mention again that every NPI has its own distributional pattern which means that not all NPIs are necessarily licensed in all the contexts in the table above.
+
+	\subsubsection{Corpora}
+	
+	The proper choice of corpora is of great importance for the current research. Firstly, we needed corpora with a proper syntactic analysis as our items are supposed to be not just 'close' or 'in the same clause' with a licenser but in its scope, and for many languages, especially those of more or less free word order like Russian, it would be rather complicated to solve the problem without syntacticly annotated corpora. Fortunately, Universal Dependencies (UD) treebanks provide such annotation for over 67 languages. The annotation scheme uses universal inventory of functional categories which allows consistent annotation of constructions across languages. The UD project has an open community and by now there are treebanks for more than 60 languages and upcoming treebanks for 12 more languages. Thus, using UD format for this research not only allows us to use syntactic information for spotting NPIs but it would also simplify the process of adopting our tool for other languages, as long as treebanks for them exist, and allow us to conduct cross-linguistic research with the same tool, unlike \textcite{soehnlichte2010} and \parencite{multiwordnpiger} and \autocite{apresyannpi}
+	
+
+	 
+	
+	\subsubsection{Downward Entailing}
+	
+	\subsubsection{Veridicality}
+	
+	\subsubsection{Haspelmath's map}
+	
+	In \parencite{haspelmathpron} 
+	
+	\subsection{Licensing markers, chosen for current research}
+	For the goals of the current research we had to choose our own set of licensing contexts - and therefore, the markers of them.
+	
+	In the table \ref{tab:contexts} common types of contexts and their markers are listed, illustrated with examples from both English and Russian.
+	
+	%\begin{tabular}{{|p{0.25\linewidth}|p{0.35\linewidth}|p{0.4\linewidth}|}}
+	\begin{longtable}{|p{0.25\linewidth}|p{0.35\linewidth}|p{0.4\linewidth}|}
+		\hline
+		\textbf{Type of context} & \textbf{Marker} & \textbf{Example} \\ \hline
+		Direct Negation & negative particles and quantifiers & I don't like \\ \hline
+		Indirect Negation & negative conjunctions, negation in preceeding clause & \\ \hline
+		Free Choice & whoever, anyone, no matter who & Кто угодно может решить эту задачу \\ \hline
+		Comparative & \textit{than}-sentences & He runs faster than anyone \\ \hline
+		Conditional & \textit{if}-sentences & If you ever consider leaving I'll stop breathing \\ \hline
+		Question & General question (no 'tail questions') & Have you ever been to France? \\ \hline
+		Irrealis: Imperative & Verbs in imperative form & Спой что-нибудь \\ \hline
+		Irrealis: Future & Verbs in furure and future time word & Next month I will see some students \\ \hline
+		Irrealis: Modal contexts & Modal verbs & He must/can/should buy something \\ \hline
+		%\end{tabular}\label{tab:licensers}	
+	\end{longtable}\label{tab:contexts}
+	
+	Nevertheless, even though the lists and scales of licensing contexts used for theoretical works are undoubtedly good as method, we cannot use all of them in our work. The problem is that some of these licensers cannot be identified automatically with sufficient precision. In order to avoid mistakes we preferred to use less licensers in our work in favor of better accuracy and precision. For this reason, applying Haspelmath's approach does not seem to be possible in this case since we have no data for contexts or 'nodes' on his map like comparatives and free choice.
+	
+	\begin{longtable}{|p{0.25\linewidth}|p{0.35\linewidth}|p{0.4\linewidth}|}
+		\hline
+		\textbf{Type of context} & \textbf{Marker} & \textbf{Comment} \\ \hline
+		Direct Negation & \textit{не, нет, нету, ни} in the same clause as target word & \\ \hline
+		Indirect Negation & Same markers as in Direct Negation, but in syntactically dominating clause & \\ \hline
+		
+	\end{longtable} 
+	\begin{longtable}{|p{0.25\linewidth}}
+    отрицательном контексте (с не)	\\
+    условие 	\\
+    вопрос	\\
+    уступка	\\
+    усилие, \\
+    трудность	\\
+    сравнение	\\
+    квантификатор всеобщности	\\
+    имплицитно отрицательный квантификатор	\\
+    рестриктивная рематическая частица только\\	
+    целевое дополнение в контексте слишком	\\
+    имплицитно отрицательный глагол	\\
+    имплицитно отрицательный предлог	\\
+    модальность (мочь)	\\
+    модальность (долженствование) \\
+    \end{longtable} 
+	
+	\subsection{Other extraction  approaches}
+	Even though the idea of using computational tools to extract polarity sensitive items is more or less obvious, not so much research has been done in this area. However, computational approached showed great results when applied to German data, as in 
+	
+	\subsubsection{Russian NPIs}
+	
+	Other works \parencite{multiwordnpiger}
+	
+	\subsubsection{Universal Dependencies}
+    
+    
+    
+    \par 
+    The main disadvantage of UD Corpora and Treebanks for our task was the fact that UD syntactic differs from standard binary syntactic trees in many ways. The example \ref{fig:dimq} shows that the UD trees are not only non-binary but the relationships between nodes work differently here. For instance,     
+    
+    \begin{figure}[!h]
+		\centering
+        \noauthomath
+		\includegraphics[scale=0.29]{sentq.png}
+		\caption{}\label{fig:dimq}
+	\end{figure}
+	
+    All limitations to our work were caused by this feature. Even though we have syntactic relations marked the way of 
+	
+    \section{Results}
+	
+	\section{Conclusion}
+	
+	\section{Data}
+	
+	\begin{longtable}{|c|c|c|} 
+		%\newline
+		\hline
+		\textbf{Verb} & \textbf{Percentage} & \textbf{Class}\\ \hline
+		Житься & 100 & strong \\ \hline
+		Запомнить2 & 100 & strong \\ \hline
+		Обобраться & 100 & strong \\ \hline
+		Терпеться & 100 & strong \\ \hline
+		Подумать & 100 & strong \\ \hline
+		Посмотреть & 100 & strong \\ \hline
+		Задуматься & 99 & strong \\ \hline
+		Замедлить & 99 & strong \\ \hline
+		Обинуясь & 99 & strong \\ \hline
+		Преминуть & 99 & strong \\ \hline
+		Заладиться & 96 & strong \\ \hline
+		Миновать & 95 & strong \\ \hline
+		Пара & 95 & strong \\ \hline
+		Напастись1 & 94 & strong \\ \hline
+		Надивиться & 92 & strong \\ \hline
+		Наздравствоваться & 92 & strong \\ \hline
+		Сроду & 91 & strong \\ \hline
+		Выносить & 90 & strong \\ \hline
+		Плошать & 90 & strong \\ \hline
+		Скупиться. & 90 & strong \\ \hline
+		Клеиться & 89 & strong \\ \hline
+		Взвидеть & 89 & strong \\ \hline
+		Удосужиться & 88 & strong \\ \hline
+		Стерпеть & 87 & strong \\ \hline
+		Притронуться & 86 & strong \\ \hline
+		Сидеться & 86 & strong \\ \hline
+		Наготовиться & 86 & strong \\ \hline
+		Ведать & 82 & strong \\ \hline
+		Переваривать & 82 & strong \\ \hline
+		Накупиться & 82 & strong \\ \hline
+		Рыпаться & 81 & strong \\ \hline
+		Впервой & 77 & middle \\ \hline
+		Допроситься1 & 76 & middle \\ \hline
+		Дозваться & 75 & middle \\ \hline
+		Трогать & 73 & middle \\ \hline
+		Видать1 & 72 & middle \\ \hline
+		Видаться & 71 & middle \\ \hline
+		Поддаваться & 71 & middle \\ \hline
+		Сметь & 71 & middle \\ \hline
+		Досмотреть & 71 & middle \\ \hline
+		Лежаться & 70 & middle \\ \hline
+		Писаться & 70 & middle \\ \hline
+		Тронуть & 70 & middle \\ \hline
+		Прикоснуться & 69 & middle \\ \hline
+		Доглядеть & 67 & middle \\ \hline
+		Годиться & 66 & middle \\ \hline
+		Пристать & 65 & middle \\ \hline
+		Задаться & 65 & middle \\ \hline
+		Нюхать & 65 & middle \\ \hline
+		Сходить1 & 64 & middle \\ \hline
+		Выдержать & 63 & middle \\ \hline
+		Спросить & 58 & middle \\ \hline
+		Угнаться & 57 & middle \\ \hline
+		Браться & 53 & middle \\ \hline
+		Навоевать & 53 & middle \\ \hline
+		Повинный & 52 & middle \\ \hline
+		Поверить1 & 52 & middle \\ \hline
+		Стесняться & 51 & middle \\ \hline
+		Вытерпеть & 50 & middle \\ \hline
+		Уколупнуть & 50 & middle \\ \hline
+		Укупить & 43 & weak \\ \hline
+		Справиться & 41 & weak \\ \hline
+		Гадать & 40 & weak \\ \hline
+		Пропасть & 39 & weak \\ \hline
+		Трогать & 33 & weak \\ \hline
+		Полагаться1 & 33 & weak \\ \hline
+		Положить & 32 & weak \\ \hline
+		Переносить1 & 32 & weak \\ \hline
+		Постыдить & 32 & weak \\ \hline
+		Терпеть & 20 & weak \\ \hline
+	\end{longtable}\label{tab:apresyan} 
+
+	\section{Bibliography}
+	\printbibliography
+	
+\end{document} 

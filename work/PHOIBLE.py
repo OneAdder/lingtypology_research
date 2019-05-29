@@ -6,6 +6,7 @@ df = p.get_df(strip_na=['tones'])
 df.head().to_csv('tables/phoible.csv')
 
 m = lingtypology.LingMap(df.language)
+m.add_custom_coordinates(df.coordinates)
 m.colormap_colors = ('white', 'red')
 m.add_features(df.tones, numeric=True)
 m.legend_title = 'Tones'

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2019.4.25)  29 MAY 2019 02:41
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2019.4.25)  29 MAY 2019 17:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1101,15 +1101,39 @@ Requested font "ectt1000" scaled 1000
 \SOUL@uldp=\dimen146
 \SOUL@ulht=\dimen147
 )
+(/usr/share/texlive/texmf-dist/tex/latex/csvsimple/csvsimple.sty
+Package: csvsimple 2016/07/01 version 1.20 LaTeX CSV file processing
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks26
+\pgfkeys@temptoks=\toks27
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks28
+))) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 69.
+)
+\csv@file=\read2
+\c@csvinputline=\count198
+\c@csvrow=\count199
+\c@csvcol=\count266
+\csv@out=\write3
+)
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
-\csq@reset=\count198
-\csq@gtype=\count199
-\csq@glevel=\count266
-\csq@qlevel=\count267
-\csq@maxlvl=\count268
-\csq@tshold=\count269
-\csq@ltx@everypar=\toks26
+\csq@reset=\count267
+\csq@gtype=\count268
+\csq@glevel=\count269
+\csq@qlevel=\count270
+\csq@maxlvl=\count271
+\csq@tshold=\count272
+\csq@ltx@everypar=\toks29
 
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2018/04/13 v5.2d csquotes generic definitions (JAW)
@@ -1155,59 +1179,56 @@ Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count270
+\lrq@indent=\count273
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count271
-\c@listtotal=\count272
-\c@listcount=\count273
-\c@liststart=\count274
-\c@liststop=\count275
-\c@citecount=\count276
-\c@citetotal=\count277
-\c@multicitecount=\count278
-\c@multicitetotal=\count279
-\c@instcount=\count280
-\c@maxnames=\count281
-\c@minnames=\count282
-\c@maxitems=\count283
-\c@minitems=\count284
-\c@citecounter=\count285
-\c@maxcitecounter=\count286
-\c@savedcitecounter=\count287
-\c@uniquelist=\count288
-\c@uniquename=\count289
-\c@refsection=\count290
-\c@refsegment=\count291
-\c@maxextratitle=\count292
-\c@maxextratitleyear=\count293
-\c@maxextraname=\count294
-\c@maxextradate=\count295
-\c@maxextraalpha=\count296
-\c@abbrvpenalty=\count297
-\c@highnamepenalty=\count298
-\c@lownamepenalty=\count299
-\c@maxparens=\count300
-\c@parenlevel=\count301
-\blx@tempcnta=\count302
-\blx@tempcntb=\count303
-\blx@tempcntc=\count304
-\blx@maxsection=\count305
-\blx@maxsegment@0=\count306
-\blx@notetype=\count307
-\blx@parenlevel@text=\count308
-\blx@parenlevel@foot=\count309
-\blx@sectionciteorder@0=\count310
-\blx@entrysetcounter=\count311
+\c@tabx@nest=\count274
+\c@listtotal=\count275
+\c@listcount=\count276
+\c@liststart=\count277
+\c@liststop=\count278
+\c@citecount=\count279
+\c@citetotal=\count280
+\c@multicitecount=\count281
+\c@multicitetotal=\count282
+\c@instcount=\count283
+\c@maxnames=\count284
+\c@minnames=\count285
+\c@maxitems=\count286
+\c@minitems=\count287
+\c@citecounter=\count288
+\c@maxcitecounter=\count289
+\c@savedcitecounter=\count290
+\c@uniquelist=\count291
+\c@uniquename=\count292
+\c@refsection=\count293
+\c@refsegment=\count294
+\c@maxextratitle=\count295
+\c@maxextratitleyear=\count296
+\c@maxextraname=\count297
+\c@maxextradate=\count298
+\c@maxextraalpha=\count299
+\c@abbrvpenalty=\count300
+\c@highnamepenalty=\count301
+\c@lownamepenalty=\count302
+\c@maxparens=\count303
+\c@parenlevel=\count304
+\blx@tempcnta=\count305
+\blx@tempcntb=\count306
+\blx@tempcntc=\count307
+\blx@maxsection=\count308
+\blx@maxsegment@0=\count309
+\blx@notetype=\count310
+\blx@parenlevel@text=\count311
+\blx@parenlevel@foot=\count312
+\blx@sectionciteorder@0=\count313
+\blx@entrysetcounter=\count314
 \labelnumberwidth=\skip50
 \labelalphawidth=\skip51
 \biblabelsep=\skip52
@@ -1216,11 +1237,11 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibinitsep=\skip55
 \bibparsep=\skip56
 \bibhang=\skip57
-\blx@bcfin=\read2
-\blx@bcfout=\write3
-\c@mincomprange=\count312
-\c@maxcomprange=\count313
-\c@mincompwidth=\count314
+\blx@bcfin=\read3
+\blx@bcfout=\write4
+\c@mincomprange=\count315
+\c@maxcomprange=\count316
+\c@mincompwidth=\count317
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1231,74 +1252,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count315
-\c@savedafterword=\count316
-\c@annotator=\count317
-\c@savedannotator=\count318
-\c@author=\count319
-\c@savedauthor=\count320
-\c@bookauthor=\count321
-\c@savedbookauthor=\count322
-\c@commentator=\count323
-\c@savedcommentator=\count324
-\c@editor=\count325
-\c@savededitor=\count326
-\c@editora=\count327
-\c@savededitora=\count328
-\c@editorb=\count329
-\c@savededitorb=\count330
-\c@editorc=\count331
-\c@savededitorc=\count332
-\c@foreword=\count333
-\c@savedforeword=\count334
-\c@holder=\count335
-\c@savedholder=\count336
-\c@introduction=\count337
-\c@savedintroduction=\count338
-\c@namea=\count339
-\c@savednamea=\count340
-\c@nameb=\count341
-\c@savednameb=\count342
-\c@namec=\count343
-\c@savednamec=\count344
-\c@translator=\count345
-\c@savedtranslator=\count346
-\c@shortauthor=\count347
-\c@savedshortauthor=\count348
-\c@shorteditor=\count349
-\c@savedshorteditor=\count350
-\c@labelname=\count351
-\c@savedlabelname=\count352
-\c@institution=\count353
-\c@savedinstitution=\count354
-\c@lista=\count355
-\c@savedlista=\count356
-\c@listb=\count357
-\c@savedlistb=\count358
-\c@listc=\count359
-\c@savedlistc=\count360
-\c@listd=\count361
-\c@savedlistd=\count362
-\c@liste=\count363
-\c@savedliste=\count364
-\c@listf=\count365
-\c@savedlistf=\count366
-\c@location=\count367
-\c@savedlocation=\count368
-\c@organization=\count369
-\c@savedorganization=\count370
-\c@origlocation=\count371
-\c@savedoriglocation=\count372
-\c@origpublisher=\count373
-\c@savedorigpublisher=\count374
-\c@publisher=\count375
-\c@savedpublisher=\count376
-\c@language=\count377
-\c@savedlanguage=\count378
-\c@origlanguage=\count379
-\c@savedoriglanguage=\count380
-\c@pageref=\count381
-\c@savedpageref=\count382
+\c@afterword=\count318
+\c@savedafterword=\count319
+\c@annotator=\count320
+\c@savedannotator=\count321
+\c@author=\count322
+\c@savedauthor=\count323
+\c@bookauthor=\count324
+\c@savedbookauthor=\count325
+\c@commentator=\count326
+\c@savedcommentator=\count327
+\c@editor=\count328
+\c@savededitor=\count329
+\c@editora=\count330
+\c@savededitora=\count331
+\c@editorb=\count332
+\c@savededitorb=\count333
+\c@editorc=\count334
+\c@savededitorc=\count335
+\c@foreword=\count336
+\c@savedforeword=\count337
+\c@holder=\count338
+\c@savedholder=\count339
+\c@introduction=\count340
+\c@savedintroduction=\count341
+\c@namea=\count342
+\c@savednamea=\count343
+\c@nameb=\count344
+\c@savednameb=\count345
+\c@namec=\count346
+\c@savednamec=\count347
+\c@translator=\count348
+\c@savedtranslator=\count349
+\c@shortauthor=\count350
+\c@savedshortauthor=\count351
+\c@shorteditor=\count352
+\c@savedshorteditor=\count353
+\c@labelname=\count354
+\c@savedlabelname=\count355
+\c@institution=\count356
+\c@savedinstitution=\count357
+\c@lista=\count358
+\c@savedlista=\count359
+\c@listb=\count360
+\c@savedlistb=\count361
+\c@listc=\count362
+\c@savedlistc=\count363
+\c@listd=\count364
+\c@savedlistd=\count365
+\c@liste=\count366
+\c@savedliste=\count367
+\c@listf=\count368
+\c@savedlistf=\count369
+\c@location=\count370
+\c@savedlocation=\count371
+\c@organization=\count372
+\c@savedorganization=\count373
+\c@origlocation=\count374
+\c@savedoriglocation=\count375
+\c@origpublisher=\count376
+\c@savedorigpublisher=\count377
+\c@publisher=\count378
+\c@savedpublisher=\count379
+\c@language=\count380
+\c@savedlanguage=\count381
+\c@origlanguage=\count382
+\c@savedoriglanguage=\count383
+\c@pageref=\count384
+\c@savedpageref=\count385
 \shorthandwidth=\skip58
 \shortjournalwidth=\skip59
 \shortserieswidth=\skip60
@@ -1328,13 +1349,13 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
-\c@textcitecount=\count383
-\c@textcitetotal=\count384
-\c@textcitemaxnames=\count385
-\c@biburlnumpenalty=\count386
-\c@biburlucpenalty=\count387
-\c@biburllcpenalty=\count388
-\c@smartand=\count389
+\c@textcitecount=\count386
+\c@textcitetotal=\count387
+\c@textcitemaxnames=\count388
+\c@biburlnumpenalty=\count389
+\c@biburlucpenalty=\count390
+\c@biburllcpenalty=\count391
+\c@smartand=\count392
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
@@ -1346,8 +1367,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count390
-\c@bbx:relatedtotal=\count391
+\c@bbx:relatedcount=\count393
+\c@bbx:relatedtotal=\count394
 ))
 Package biblatex Info: Trying to load citation style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.cbx' found.
@@ -1378,9 +1399,9 @@ Package tocbibind Note: Using section or other style headings.
 ) (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen148
 \WF@size=\dimen149
-\c@WF@wrappedlines=\count392
+\c@WF@wrappedlines=\count395
 \WF@box=\box51
-\WF@everypar=\toks27
+\WF@everypar=\toks30
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
@@ -1388,7 +1409,7 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \col@sep=\dimen150
 \ar@mcellbox=\box52
 \extrarowheight=\dimen151
-\NC@list=\toks28
+\NC@list=\toks31
 \extratabsurround=\skip72
 \backup@length=\skip73
 \ar@cellbox=\box53
@@ -1400,12 +1421,12 @@ Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
 \TX@old@col=\dimen154
 \TX@target=\dimen155
 \TX@delta=\dimen156
-\TX@cols=\count393
-\TX@ftn=\toks29
+\TX@cols=\count396
+\TX@ftn=\toks32
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tabulary/tabulary.sty
 Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
-\TY@count=\count394
+\TY@count=\count397
 \TY@linewidth=\dimen157
 \tymin=\dimen158
 \tymax=\dimen159
@@ -1423,12 +1444,12 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \cmidrulesep=\dimen168
 \cmidrulekern=\dimen169
 \defaultaddspace=\dimen170
-\@cmidla=\count395
-\@cmidlb=\count396
+\@cmidla=\count398
+\@cmidlb=\count399
 \@aboverulesep=\dimen171
 \@belowrulesep=\dimen172
-\@thisruleclass=\count397
-\@lastruleclass=\count398
+\@thisruleclass=\count400
+\@lastruleclass=\count401
 \@thisrulewidth=\dimen173
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
@@ -1437,28 +1458,28 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
 \LTright=\skip75
 \LTpre=\skip76
 \LTpost=\skip77
-\LTchunksize=\count399
+\LTchunksize=\count402
 \LTcapwidth=\dimen174
 \LT@head=\box54
 \LT@firsthead=\box55
 \LT@foot=\box56
 \LT@lastfoot=\box57
-\LT@cols=\count400
-\LT@rows=\count401
-\c@LT@tables=\count402
-\c@LT@chunks=\count403
-\LT@p@ftn=\toks30
+\LT@cols=\count403
+\LT@rows=\count404
+\c@LT@tables=\count405
+\c@LT@chunks=\count406
+\LT@p@ftn=\toks33
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
-\c@tracingmulticols=\count404
+\c@tracingmulticols=\count407
 \mult@box=\box58
 \multicol@leftmargin=\dimen175
-\c@unbalance=\count405
-\c@collectmore=\count406
-\doublecol@number=\count407
-\multicoltolerance=\count408
-\multicolpretolerance=\count409
+\c@unbalance=\count408
+\c@collectmore=\count409
+\doublecol@number=\count410
+\multicoltolerance=\count411
+\multicolpretolerance=\count412
 \full@width=\dimen176
 \page@free=\dimen177
 \premulticols=\dimen178
@@ -1489,19 +1510,19 @@ Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 \@tempa=\box79
 \@tempa=\box80
 \@tempa=\box81
-\c@columnbadness=\count410
-\c@finalcolumnbadness=\count411
+\c@columnbadness=\count413
+\c@finalcolumnbadness=\count414
 \last@try=\dimen181
 \multicolovershoot=\dimen182
 \multicolundershoot=\dimen183
 \mult@nat@firstbox=\box82
 \colbreak@box=\box83
-\mc@col@check@num=\count412
+\mc@col@check@num=\count415
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
 \multirow@colwidth=\skip80
-\multirow@cntb=\count413
+\multirow@cntb=\count416
 \multirow@dima=\skip81
 \bigstrutjot=\dimen184
 )
@@ -1529,7 +1550,7 @@ Package: tikz-dependency 2011/01/08 v1.1 Macros to draw dependency trees
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks31
+\pgfutil@everybye=\toks34
 \pgfutil@tempdima=\dimen185
 \pgfutil@tempdimb=\dimen186
 
@@ -1550,14 +1571,7 @@ Package: pgf 2019/02/02 v3.1.1 (3.1.1)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2019/02/02 v3.1.1 (3.1.1)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks32
-\pgfkeys@temptoks=\toks33
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
-ex
-\pgfkeys@tmptoks=\toks34
-))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
 \pgf@x=\dimen187
 \pgf@y=\dimen188
 \pgf@xa=\dimen189
@@ -1566,17 +1580,18 @@ ex
 \pgf@yb=\dimen192
 \pgf@xc=\dimen193
 \pgf@yc=\dimen194
-\w@pgf@writea=\write4
-\r@pgf@reada=\read3
-\c@pgf@counta=\count414
-\c@pgf@countb=\count415
-\c@pgf@countc=\count416
-\c@pgf@countd=\count417
+\w@pgf@writea=\write5
+\r@pgf@reada=\read4
+\c@pgf@counta=\count417
+\c@pgf@countb=\count418
+\c@pgf@countc=\count419
+\c@pgf@countd=\count420
 \t@pgf@toka=\toks35
 \t@pgf@tokb=\toks36
 \t@pgf@tokc=\toks37
-\pgf@sys@id@count=\count418
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+\pgf@sys@id@count=\count421
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2019/02/02 v3.1.1 (3.1.1)
 )
 Driver file for pgf: pgfsys-xetex.def
@@ -1591,13 +1606,13 @@ File: pgfsys-dvipdfmx.def 2019/02/02 v3.1.1 (3.1.1)
 f
 File: pgfsys-common-pdf.def 2019/02/02 v3.1.1 (3.1.1)
 )
-\pgfsys@objnum=\count419
+\pgfsys@objnum=\count422
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgfsyssoftpath@smallbuffer@items=\count420
-\pgfsyssoftpath@bigbuffer@items=\count421
+\pgfsyssoftpath@smallbuffer@items=\count423
+\pgfsyssoftpath@bigbuffer@items=\count424
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -1611,7 +1626,7 @@ Package: pgfcore 2019/02/02 v3.1.1 (3.1.1)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen195
-\pgfmath@count=\count422
+\pgfmath@count=\count425
 \pgfmath@box=\box85
 \pgfmath@toks=\toks38
 \pgfmath@stack@operand=\toks39
@@ -1635,7 +1650,7 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count423
+\c@pgfmathroundto@lastzeros=\count426
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
@@ -1673,7 +1688,7 @@ File: pgfcorescopes.code.tex 2019/02/02 v3.1.1 (3.1.1)
 \pgfpic=\box86
 \pgf@hbox=\box87
 \pgf@layerbox@main=\box88
-\pgf@picture@serial@count=\count424
+\pgf@picture@serial@count=\count427
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
@@ -1706,7 +1721,7 @@ File: pgfcorearrows.code.tex 2019/02/02 v3.1.1 (3.1.1)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2019/02/02 v3.1.1 (3.1.1)
 \pgf@max=\dimen275
-\pgf@sys@shading@range@num=\count425
+\pgf@sys@shading@range@num=\count428
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2019/02/02 v3.1.1 (3.1.1)
@@ -1747,8 +1762,6 @@ Package: pgfcomp-version-0-65 2019/02/02 v3.1.1 (3.1.1)
 .sty
 Package: pgfcomp-version-1-18 2019/02/02 v3.1.1 (3.1.1)
 )) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
@@ -1766,7 +1779,7 @@ Package: tikz 2019/02/02 v3.1.1 (3.1.1)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgf@plot@mark@count=\count426
+\pgf@plot@mark@count=\count429
 \pgfplotmarksize=\dimen280
 )
 \tikz@lastx=\dimen281
@@ -1779,18 +1792,18 @@ File: pgflibraryplothandlers.code.tex 2019/02/02 v3.1.1 (3.1.1)
 \tikz@figbox@bg=\box92
 \tikz@tempbox=\box93
 \tikz@tempbox@bg=\box94
-\tikztreelevel=\count427
-\tikznumberofchildren=\count428
-\tikznumberofcurrentchild=\count429
-\tikz@fig@count=\count430
+\tikztreelevel=\count430
+\tikznumberofchildren=\count431
+\tikznumberofcurrentchild=\count432
+\tikz@fig@count=\count433
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgfmatrixcurrentrow=\count431
-\pgfmatrixcurrentcolumn=\count432
-\pgf@matrix@numberofcolumns=\count433
+\pgfmatrixcurrentrow=\count434
+\pgfmatrixcurrentcolumn=\count435
+\pgf@matrix@numberofcolumns=\count436
 )
-\tikz@expandcount=\count434
+\tikz@expandcount=\count437
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -1913,7 +1926,7 @@ File: pgflibraryshapes.multipart.code.tex 2019/02/02 v3.1.1 (3.1.1)
 )))
 \pgf@layerbox@depgroups=\box117
 \pgf@layerboxsaved@depgroups=\box118
-\c@dt@labelid=\count435
+\c@dt@labelid=\count438
 \xca=\skip82
 \yca=\skip83
 \xcb=\skip84
@@ -1933,8 +1946,8 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \caption@parindent=\dimen293
 \caption@hangindent=\dimen294
 )
-\c@caption@flags=\count436
-\c@ContinuedFloat=\count437
+\c@caption@flags=\count439
+\c@ContinuedFloat=\count440
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
@@ -1969,17 +1982,17 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \gline=\box126
 \glossglue=\skip88
 )
-\c@fnx=\count438
-\@xnumdepth=\count439
-\c@xnumi=\count440
-\c@xnumii=\count441
-\c@xnumiii=\count442
-\c@xnumiv=\count443
-\c@exx=\count444
-\c@rxnumi=\count445
-\c@rxnumii=\count446
-\c@rxnumiii=\count447
-\c@rxnumiv=\count448
+\c@fnx=\count441
+\@xnumdepth=\count442
+\c@xnumi=\count443
+\c@xnumii=\count444
+\c@xnumiii=\count445
+\c@xnumiv=\count446
+\c@exx=\count447
+\c@rxnumi=\count448
+\c@rxnumii=\count449
+\c@rxnumiii=\count450
+\c@rxnumiv=\count451
 \lcommentsep=\skip89
 Requested font "cmex10" scaled 1095
  -> /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
@@ -2004,8 +2017,8 @@ File: p2e-xetex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 \@arcrad=\dimen301
 \@tempdimd=\dimen302
 )
-\c@treecount=\count449
-\c@branchcount=\count450
+\c@treecount=\count452
+\c@branchcount=\count453
 \parentbox=\box127
 \treebox=\box128
 \treeboxone=\box129
@@ -2104,9 +2117,9 @@ File: p2e-xetex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 \treewidth=\skip163
 \qta=\toks46
 \qtb=\toks47
-\nbranches=\count451
-\qroofx=\count452
-\qroofy=\count453
+\nbranches=\count454
+\qroofx=\count455
+\qroofy=\count456
 \@qrscratchbox=\box149
 )
 Package csquotes Info: Checking for multilingual support...
@@ -2130,137 +2143,137 @@ Package biblatex Warning: Patching footnotes failed.
 (./diplom.aux)
 \openout1 = `diplom.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 78.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 79.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 79.
  (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 78.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 79.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    ... okay on input line 79.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 78.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 78.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 78.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 78.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 78.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 78.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 78.
-LaTeX Font Info:    Redeclaring math accent \check on input line 78.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 78.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 78.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 78.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 78.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 79.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 79.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 79.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 79.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 79.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 79.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 79.
+LaTeX Font Info:    Redeclaring math accent \check on input line 79.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 79.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 79.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 79.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 79.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 78.
+(Font)              `operators' in the math version `normal' on input line 79.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/LinLibertine(0)/m/n on input line 78
+(Font)                  OT1/cmr/m/n --> TU/LinLibertine(0)/m/n on input line 79
 .
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 78.
+(Font)              `operators' in the math version `bold' on input line 79.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/LinLibertine(0)/m/n on input line 7
-8.
+9.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/LinLibertine(0)/m/n --> TU/LinLibertine(0)/m/n on in
-put line 78.
+put line 79.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/LinLibertine(0)/m/it on input line 
-78.
+79.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/LinLibertine(0)/bx/n on input line 
-78.
+79.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/LinBiolinum(0)/m/n on input line 78
+(Font)                  OT1/cmss/m/n --> TU/LinBiolinum(0)/m/n on input line 79
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> TU/LinLibertine(5)/m/n on input line 7
-8.
+9.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/LinLibertine(0)/m/n --> TU/LinLibertine(0)/bx/n on i
-nput line 78.
+nput line 79.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/LinLibertine(0)/bx/it on input lin
-e 78.
+e 79.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/LinBiolinum(0)/bx/n on input line 
-78.
+79.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/LinLibertine(5)/bx/n on input line 
-78.
-\c@lstlisting=\count454
+79.
+\c@lstlisting=\count457
 Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `diplom.bcf'.
+\openout4 = `diplom.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'diplom.bbl' found.
  (./diplom.bbl)
-Package biblatex Info: Reference section=0 on input line 78.
-Package biblatex Info: Reference segment=0 on input line 78.
+Package biblatex Info: Reference section=0 on input line 79.
+Package biblatex Info: Reference segment=0 on input line 79.
 
 ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/bx/n' will be
-(Font)              scaled to size 12.0pt on input line 85.
+(Font)              scaled to size 12.0pt on input line 86.
 Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;
 mapping=tex-text;" at 12.0pt
  -> /usr/share/texlive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_
 RB.otf
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 103.
+(Font)              scaled to size 12.0pt on input line 104.
 Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;
 mapping=tex-text;" at 12.0pt
  -> /usr/share/texlive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_
 RI.otf
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 108.
+(Font)              scaled to size 8.0pt on input line 109.
 Requested font "[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;m
 apping=tex-text;" at 8.0pt
  -> /usr/share/texlive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_
 R.otf
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 108.
+(Font)              scaled to size 6.0pt on input line 109.
 Requested font "[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;m
 apping=tex-text;" at 6.0pt
  -> /usr/share/texlive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_
@@ -2278,11 +2291,11 @@ Requested font "cmsy8" at 8.0pt
 Requested font "cmsy6" at 6.0pt
  -> /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 108.
+(Font)              <12> on input line 109.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 108.
+(Font)              <8> on input line 109.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 108.
+(Font)              <6> on input line 109.
 Requested font "cmr12" at 12.0pt
  -> /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 Requested font "cmr8" at 8.0pt
@@ -2290,12 +2303,12 @@ Requested font "cmr8" at 8.0pt
 Requested font "cmr6" at 6.0pt
  -> /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 
-Overfull \hbox (2.29039pt too wide) in paragraph at lines 109--109
+Overfull \hbox (2.29039pt too wide) in paragraph at lines 110--110
 []|\TU/LinLibertine(0)/m/n/12 Академический руководитель
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 110--110
+Underfull \hbox (badness 1502) in paragraph at lines 111--111
 []|\TU/LinLibertine(0)/m/n/12 канд. филологических наук,
  []
 
@@ -2303,99 +2316,99 @@ Underfull \hbox (badness 1502) in paragraph at lines 110--110
 
 ]
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 123.
+(Font)              scaled to size 14.4pt on input line 124.
 Requested font "[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;m
 apping=tex-text;" at 14.4pt
  -> /usr/share/texlive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_
 R.otf
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/bx/n' will be
-(Font)              scaled to size 14.4pt on input line 123.
+(Font)              scaled to size 14.4pt on input line 124.
 Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;
 mapping=tex-text;" at 14.4pt
  -> /usr/share/texlive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_
 RB.otf
  (./diplom.toc)
-\tf@toc=\write5
-\openout5 = `diplom.toc'.
+\tf@toc=\write6
+\openout6 = `diplom.toc'.
 
  [2]
-Overfull \hbox (1.90666pt too wide) in paragraph at lines 135--136
+Overfull \hbox (1.90666pt too wide) in paragraph at lines 136--137
 \TU/LinLibertine(0)/m/n/12 ([]Haspelmath and Forkel 2013). This specification a
 lso provides framework ([]Forkel
  []
 
 [3]
 LaTeX Font Info:    Font shape `TU/LinLibertine(5)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 153.
+(Font)              scaled to size 12.0pt on input line 154.
 Requested font "[LinLibertine_M.otf]/OT:script=latn;language=DFLT;" at 12.0pt
  -> /usr/share/texlive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_
 M.otf
 
-Overfull \hbox (2.992pt too wide) in paragraph at lines 189--190
+Overfull \hbox (2.992pt too wide) in paragraph at lines 190--191
 []\TU/LinLibertine(5)/m/n/12 language_elevation_mapping.json \TU/LinLibertine(0
 )/m/n/12 data on elevation for each
  []
 
 [4]
-Overfull \hbox (52.74002pt too wide) in paragraph at lines 203--204
+Overfull \hbox (52.74002pt too wide) in paragraph at lines 204--205
 \TU/LinLibertine(0)/m/n/12 ers based on the amount of features for each languag
 e, creates \TU/LinLibertine(5)/m/n/12 folium.CircleMarker
  []
 
 [5]
-Overfull \hbox (4.41202pt too wide) in paragraph at lines 219--220
+Overfull \hbox (4.41202pt too wide) in paragraph at lines 220--221
 []\TU/LinLibertine(0)/m/n/12 The default appearance of standard \TU/LinLibertin
 e(5)/m/n/12 folium.CircleMarker \TU/LinLibertine(0)/m/n/12 objects does
  []
 
 
-Overfull \hbox (6.65471pt too wide) in paragraph at lines 221--223
+Overfull \hbox (6.65471pt too wide) in paragraph at lines 222--224
 \TU/LinLibertine(0)/m/n/12 objects by default. Therefore, instead of rendering 
 one marker with stroke, \TU/LinLibertine(5)/m/n/12 ling-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
 File: images/FoliumStrokeAppearance.png Graphic file (type bmp)
 <images/FoliumStrokeAppearance.png>
 
-Overfull \hbox (18.0pt too wide) in paragraph at lines 237--238
+Overfull \hbox (18.0pt too wide) in paragraph at lines 238--239
 [][] 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
  []
 
 File: images/LingtypologyStrokeAppearance.png Graphic file (type bmp)
 <images/LingtypologyStrokeAppearance.png>
 
-Overfull \hbox (18.0pt too wide) in paragraph at lines 244--245
+Overfull \hbox (18.0pt too wide) in paragraph at lines 245--246
 [][] 
  []
 
 [7] [8] [9]
-Overfull \hbox (14.93503pt too wide) in paragraph at lines 306--307
+Overfull \hbox (14.93503pt too wide) in paragraph at lines 307--308
 []\TU/LinLibertine(0)/m/n/12 ‘The South American Indigenous Language Structures
  (SAILS) is a large database
  []
 
 
-Overfull \hbox (1.02802pt too wide) in paragraph at lines 309--311
+Overfull \hbox (1.02802pt too wide) in paragraph at lines 310--312
 \TU/LinLibertine(0)/m/n/12 compiled into a single searchable convenience sample
 .‘ ([]Moran and McCloy 2019).
  []
@@ -2406,52 +2419,45 @@ nguage=DFLT;+tnum;+lnum;mapping=tex-text;!
 Missing character: There is no ◼ in font [LinLibertine_R.otf]/OT:script=latn;la
 nguage=DFLT;+tnum;+lnum;mapping=tex-text;!
  [14]
-Overfull \hbox (5.89868pt too wide) in paragraph at lines 524--527
+Overfull \hbox (5.89868pt too wide) in paragraph at lines 525--528
 []\TU/LinLibertine(0)/m/n/12 Add overlapping features. For example, if you want
  to draw on map whether
  []
 
 
-Overfull \hbox (22.50008pt too wide) in paragraph at lines 549--550
+Overfull \hbox (22.50008pt too wide) in paragraph at lines 550--551
 []\TU/LinLibertine(0)/bx/n/12 add_minicharts \TU/LinLibertine(0)/m/it/12 (*mini
 charts, typ=’pie’, size=0.6, names=None, textprops=None,
  []
 
 [15]
-Overfull \hbox (31.46004pt too wide) in paragraph at lines 615--616
+Overfull \hbox (31.46004pt too wide) in paragraph at lines 616--617
 []\TU/LinLibertine(0)/bx/n/12 add_minimap \TU/LinLibertine(0)/m/it/12 (position
 =’bottomleft’, width=150, height=150, collapsed_width=25,
  []
 
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 666--667
-[]
+[16] [17]
+Overfull \hbox (24.34001pt too wide) in paragraph at lines 688--689
+[]\TU/LinLibertine(0)/m/n/12 The only funcntion that accepts list-like objects 
+and returns \TU/LinLibertine(0)/m/it/12 list \TU/LinLibertine(0)/m/n/12 is \TU/
+LinLibertine(0)/bx/n/12 get_affiliations\TU/LinLibertine(0)/m/n/12 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 666--667
-
+Overfull \hbox (0.36803pt too wide) in paragraph at lines 721--722
+[]\TU/LinLibertine(0)/m/n/12 Download the current version of the Glottolog data
+ ([]Hammarström, Forkel,
  []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 676--677
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 676--677
-
- []
-
-[18]
+[18] [19] [20] [21]
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 691.
+(Font)              scaled to size 12.0pt on input line 858.
 Requested font "[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;+
 smcp;mapping=tex-text;" at 12.0pt
  -> /usr/share/texlive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_
 R.otf
 
-Overfull \hbox (7.38382pt too wide) in paragraph at lines 692--692
+Overfull \hbox (7.38382pt too wide) in paragraph at lines 859--859
 [][]\TU/LinLibertine(0)/m/n/12 Agafonkin, Vladimir (2017). \TU/LinLibertine(0)/
 m/it/12 Leaflet API reference\TU/LinLibertine(0)/m/n/12 . \TU/LinLibertine(0)/m
 /sc/12 url\TU/LinLibertine(0)/m/n/12 : $[][][][][] [] [] [] [][][][][][][][][] 
@@ -2459,35 +2465,35 @@ m/it/12 Leaflet API reference\TU/LinLibertine(0)/m/n/12 . \TU/LinLibertine(0)/m
  []
 
 
-Overfull \hbox (5.1419pt too wide) in paragraph at lines 692--692
+Overfull \hbox (5.1419pt too wide) in paragraph at lines 859--859
 [][]\TU/LinLibertine(0)/m/n/12 Caswell, Thomas A et al. (May 2019). \TU/LinLibe
 rtine(0)/m/it/12 matplotlib/matplotlib v3.1.0\TU/LinLibertine(0)/m/n/12 . \TU/L
 inLibertine(0)/m/sc/12 doi\TU/LinLibertine(0)/m/n/12 : $[][] [] [][][][] []
  []
 
 
-Overfull \hbox (1.29863pt too wide) in paragraph at lines 692--692
+Overfull \hbox (1.29863pt too wide) in paragraph at lines 859--859
 [][][][][][] [] [][][][][][][]$\TU/LinLibertine(0)/m/n/12 . \TU/LinLibertine(0)
 /m/sc/12 url\TU/LinLibertine(0)/m/n/12 : $[][][][][] [] [] [] [][][] [] [][][] 
 [] [][] [] [][][][] [] [][][][][][] []
  []
 
 
-Overfull \hbox (7.98688pt too wide) in paragraph at lines 692--692
+Overfull \hbox (7.98688pt too wide) in paragraph at lines 859--859
 \TU/LinLibertine(0)/m/n/12 Max Planck Institute for Evolutionary Anthropology. 
 \TU/LinLibertine(0)/m/sc/12 url\TU/LinLibertine(0)/m/n/12 : $[][][][][] [] [] [
 ] [][][][] []
  []
 
 
-Overfull \hbox (3.93863pt too wide) in paragraph at lines 692--692
+Overfull \hbox (3.93863pt too wide) in paragraph at lines 859--859
 [][][][][][][]$\TU/LinLibertine(0)/m/n/12 . \TU/LinLibertine(0)/m/sc/12 url\TU/
 LinLibertine(0)/m/n/12 : $[][][][][] [] [] [] [][][] [] [][][] [] [][] [] [][][
 ][] [] [][][][][][] [] [][][][][][][]$. 
  []
 
 
-Overfull \hbox (19.99881pt too wide) in paragraph at lines 692--692
+Overfull \hbox (19.99881pt too wide) in paragraph at lines 859--859
 [][]\TU/LinLibertine(0)/m/n/12 Forkel, Robert (Apr. 2019). \TU/LinLibertine(0)/
 m/it/12 clld/pyglottolog: Glottolog API\TU/LinLibertine(0)/m/n/12 . \TU/LinLibe
 rtine(0)/m/sc/12 doi\TU/LinLibertine(0)/m/n/12 : $[][] [] [][][][] [] [][][][][
@@ -2495,66 +2501,62 @@ rtine(0)/m/sc/12 doi\TU/LinLibertine(0)/m/n/12 : $[][] [] [][][][] [] [][][][][
  []
 
 
-Overfull \hbox (3.93863pt too wide) in paragraph at lines 692--692
+Overfull \hbox (3.93863pt too wide) in paragraph at lines 859--859
 [][][][][][][]$\TU/LinLibertine(0)/m/n/12 . \TU/LinLibertine(0)/m/sc/12 url\TU/
 LinLibertine(0)/m/n/12 : $[][][][][] [] [] [] [][][] [] [][][] [] [][] [] [][][
 ][] [] [][][][][][] [] [][][][][][][]$. 
  []
 
 
-Overfull \hbox (5.594pt too wide) in paragraph at lines 692--692
+Overfull \hbox (5.594pt too wide) in paragraph at lines 859--859
 [][]\TU/LinLibertine(0)/m/n/12 Forkel, Robert et al. (Apr. 2019). \TU/LinLibert
 ine(0)/m/it/12 clld/clld: clld - a toolkit for cross-linguistic databases\TU/Li
 nLibertine(0)/m/n/12 .
  []
 
-[19]
-Overfull \hbox (1.79863pt too wide) in paragraph at lines 692--692
+[22]
+Overfull \hbox (1.79863pt too wide) in paragraph at lines 859--859
 [][] [] [][][][] [] [][][][][][] [] [][][][][][][]$\TU/LinLibertine(0)/m/n/12 .
  \TU/LinLibertine(0)/m/sc/12 url\TU/LinLibertine(0)/m/n/12 : $[][][][][] [] [] 
 [] [][][][] [] [] [][] [][][][][][][] []
  []
 
 
-Overfull \hbox (5.69287pt too wide) in paragraph at lines 692--692
+Overfull \hbox (5.69287pt too wide) in paragraph at lines 859--859
 [][]\TU/LinLibertine(0)/m/n/12 Python Software Foundation (2019). \TU/LinLibert
 ine(0)/m/it/12 The Python Language Reference\TU/LinLibertine(0)/m/n/12 . \TU/Li
 nLibertine(0)/m/sc/12 url\TU/LinLibertine(0)/m/n/12 : $[][][][][] []
  []
 
 
-Overfull \hbox (7.98688pt too wide) in paragraph at lines 692--692
+Overfull \hbox (7.98688pt too wide) in paragraph at lines 859--859
 \TU/LinLibertine(0)/m/n/12 Max Planck Institute for Evolutionary Anthropology. 
 \TU/LinLibertine(0)/m/sc/12 url\TU/LinLibertine(0)/m/n/12 : $[][][][][] [] [] [
 ] [][][][] []
  []
 
-[20]
-Overfull \hbox (27.60425pt too wide) in paragraph at lines 702--703
+[23]
+Overfull \hbox (27.60425pt too wide) in paragraph at lines 869--870
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (27.60425pt too wide) in paragraph at lines 717--718
+Overfull \hbox (27.60425pt too wide) in paragraph at lines 884--885
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-[21] (./diplom.aux)
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
+[24] (./diplom.aux)
 Package logreq Info: Writing requests to 'diplom.run.xml'.
 \openout1 = `diplom.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50855 strings out of 492912
- 1056699 string characters out of 6134893
- 1449606 words of memory out of 5000000
- 54273 multiletter control sequences out of 15000+600000
+ 51358 strings out of 492912
+ 1069597 string characters out of 6134893
+ 1460764 words of memory out of 5000000
+ 54765 multiletter control sequences out of 15000+600000
  536314 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 62i,8n,99p,1167b,6454s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,8n,99p,1167b,6454s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on diplom.pdf (21 pages).
+Output written on diplom.pdf (24 pages).

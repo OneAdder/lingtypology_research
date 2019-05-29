@@ -58,6 +58,28 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3}Glottolog}{18}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Bibliography}{19}% 
+\contentsline {subsubsection}{\numberline {3.3.1}Functions}{18}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Attachment}{21}% 
+\contentsline {subsubsection}{\numberline {3.3.2}Versions}{19}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4}Databases API}{19}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.1}General}{19}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.2}WALS}{20}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.3}Autotyp}{20}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.4}AfBo}{20}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.5}SAILS}{21}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.6}PHOIBLE}{21}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5}Examples}{21}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.1}WALS Heatmap}{21}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Bibliography}{22}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Appendix}{24}% 

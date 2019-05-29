@@ -1,0 +1,8 @@
+\begin{tabular}{ l | l | l | l | l | l | l | l | l | l }
+    ~ & wals\_code & language & genus & family & area & coordinates & \_1A & \_1A\_num & \_1A\_desc \\
+    0 & kiw &  Kiwai (Southern) & Kiwaian & Kiwaian & Phonology & "(-8.0,  143.5)" & 1. Small & 1 & Small \\
+    1 & xoo & !Xóõ & Tu & Tu & Phonology & "(-24.0,  21.5)" & 5. Large & 5 & Large \\
+    2 & ani & //Ani & Khoe-Kwadi & Khoe-Kwadi & Phonology & "(-18.9166666667,  21.9166666667)" & 5. Large & 5 & Large \\
+    3 & abi & Abipón & South Guaicuruan & Guaicuruan & Phonology & "(-29.0,  -61.0)" & 2. Moderately small & 2 & Moderately small \\
+    4 & abk & Abkhaz & Northwest Caucasian & Northwest Caucasian & Phonology & "(43.0833333333,  41.0)" & 5. Large & 5 & Large \\
+\end{tabular}

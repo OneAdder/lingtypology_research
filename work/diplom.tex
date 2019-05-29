@@ -5,6 +5,7 @@
 \setotherlanguage{russian}
 \usepackage[shortcuts]{extdash}
 
+\usepackage{adjustbox}
 
 \usepackage{fontspec}
 \usepackage{xunicode}
@@ -17,6 +18,7 @@
 %\setmainfont{Times New Roman}
 
 \usepackage{soul} 
+\usepackage{csvsimple}
 
 % Библиография
 \usepackage[autostyle]{csquotes}
@@ -833,13 +835,40 @@ Table that contain description for all the SAILS pages.
 \end{itemize}
 
 
+\subsection{Examples}
+
+\subsubsection{WALS Heatmap}
+
+The following Table 1 and Picture 3 are generated with the code in Listing 1.
+
+\textbf{Listing 1. WALS Heatmap Example.}
+\begin{lstlisting}
+ dfd
+\end{lstlisting}
+
+\textbf{Table 1. WALS Heatmap Example.}
+
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{ l | l | l | c | r | r | r }
+    ~ & wals\_code & language & ... & \_1A & \_1A\_num & \_1A\_desc \\
+    \hline
+    0 & kiw &  Kiwai (Southern) & ... & 1. Small & 1 & Small \\
+    1 & xoo & !Xóõ & ... & 5. Large & 5 & Large \\
+    2 & ani & //Ani & ... & 5. Large & 5 & Large \\
+    3 & abi & Abipón & ... & 2. Moderately small & 2 & Moderately small \\
+    4 & abk & Abkhaz & ... & 5. Large & 5 & Large \\
+\end{tabular}
+\end{adjustbox}
+
+
+
 \newpage
 
 \section{Bibliography}
 \printbibliography
 
 \newpage
-\section{Attachment}
+\section{Appendix}
 
 \textbf{Listing 1. Wals 1A map with default Lingtypology strokes.}
 \begin{lstlisting}

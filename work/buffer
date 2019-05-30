@@ -6,3 +6,21 @@
     3 & abi & Abipón & South Guaicuruan & Guaicuruan & Phonology & "(-29.0,  -61.0)" & 2. Moderately small & 2 & Moderately small \\
     4 & abk & Abkhaz & Northwest Caucasian & Northwest Caucasian & Phonology & "(43.0833333333,  41.0)" & 5. Large & 5 & Large \\
 \end{tabular}
+
+
+~, & contribution_name & language & coordinates & glottocode & macroarea & phonemes & consonants & vowels & tones & source & inventory_page
+0 & Korean (SPA 1) & Korean & "(37.5, 128.0)" & kore1280 & Eurasia & 40 & 22 & 18 & 0.0 & https://archive.org/details/kor_SPA1979_phon & https://phoible.org/languages/kore1280
+1 & Ket (SPA 2) & Ket & "(63.7551, 87.5466)" & kett1243 & Eurasia & 32 & 18 & 14 & 0.0 & https://archive.org/details/ket_SPA1979_phon & https://phoible.org/languages/kett1243
+2 & Lak (SPA 3) & Lak & "(42.1328, 47.0809)" & lakk1252 & Eurasia & 69 & 60 & 9 & 0.0 & https://archive.org/details/lbe_SPA1979_phon & https://phoible.org/languages/lakk1252
+3 & Kabardian (SPA 4) & Kabardian & "(43.5082, 43.3918)" & kaba1278 & Eurasia & 56 & 49 & 7 & 0.0 & https://archive.org/details/kbd_SPA1979_phon & https://phoible.org/languages/kaba1278
+4 & Georgian (SPA 5) & Georgian & "(41.850396999999994, 43.78613)" & nucl1302 & Eurasia & 35 & 29 & 6 & 0.0 & https://archive.org/details/kat_SPA1979_phon & https://phoible.org/languages/nucl1302
+
+\begin{tabular}{ l | l | l | c | c | r | r | r }
+    ~ & language & coordinates & ICU3 & ICU3_desc & ICU4 & ICU4_desc \\
+    \hline
+    0 & Baniva & (5.26123, -67.56326999999999) & 1 & Yes & 0 & No \\
+    1 & Apolista & (-14.83, -68.66)" & 0 & No & ? & ? \\
+    2 & Yavitero & (2.800281, -68.08421899999999) & 1 & Yes & 0 & No \\
+    3 & Resígaro & (-2.48139, -71.35778) & 0 & No & 0 & No \\
+    4 & Tol & (14.66859,  -87.03719) & 0 & No & 0 & No \\
+\end{tabular}

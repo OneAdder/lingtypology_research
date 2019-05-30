@@ -839,11 +839,24 @@ Table that contain description for all the SAILS pages.
 
 \subsubsection{WALS Heatmap}
 
-The following Table 1 and Picture 3 are generated with the code in Listing 1.
-
 \textbf{Listing 1. WALS Heatmap Example.}
 \begin{lstlisting}
- dfd
+ import lingtypology
+
+ #Get WALS page 1A
+ wals = lingtypology.db_apis.Wals('1A')
+ data = wals.get_df()
+ #Write dataframe to CSV
+ data.head().to_csv('tables/Wals1A.csv')
+ 
+ #First initialize LingMap without languages
+ m = lingtypology.LingMap()
+ #Add heatmap from  the Wals data where the inventory is large
+ m.add_heatmap(data[data._1A_desc == 'Large'].coordinates)
+ #Add title
+ m.title = 'Large Consonant Inventories'
+ #Save as PNG
+ m.save_static('images/WalsHeatmap.png')
 \end{lstlisting}
 
 \textbf{Table 1. WALS Heatmap Example.}
@@ -860,13 +873,294 @@ The following Table 1 and Picture 3 are generated with the code in Listing 1.
 \end{tabular}
 \end{adjustbox}
 
+\bigskip
+
+\begin{samepage}
+\textbf{Picture 3. WALS Heatmap Example.}\nopagebreak
+
+\includegraphics[width=\textwidth]{images/WalsHeatMap.png}
+\end{samepage}
+
+\subsubsection{Phoible Tones}
+
+\textbf{Listing 2. Phoible Tones Example.}
+\begin{lstlisting}
+ import lingtypology
+
+ #Get the table for UPSID dataset
+ p = lingtypology.db_apis.Phoible(subset='SPA')
+ df = p.get_df(strip_na=['tones'])
+ df.head().to_csv('tables/phoible.csv')
+ 
+ m = lingtypology.LingMap(df.language)
+ m.add_custom_coordinates(df.coordinates)
+ m.colormap_colors = ('white', 'red')
+ m.add_features(df.tones, numeric=True)
+ m.legend_title = 'Tones'
+ m.save_static('images/phoible.png')
+\end{lstlisting}
+
+\textbf{Table 2. Phoible Tones Example.}
+
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{ l | l | l | c | r | r | r }
+    ~ & contribution\_name & language & coordinates & ... & tones & ... \\
+    \hline
+    0 & Korean (SPA 1) & Korean & (37.5, 128.0) & ... & 0.0 & ... \\
+    1 & Ket (SPA 2) & Ket & (63.7551, 87.5466) & ... & 0.0 & ... \\
+    2 & Lak (SPA 3) & Lak & (42.1328, 47.0809) & ... & 0.0 & ... \\
+    3 & Kabardian (SPA 4) & Kabardian & (43.5082, 43.3918) & ... & 0.0 & ... \\
+    4 & Georgian (SPA 5) & Georgian & (41.850396999999994, 43.78613) & ... & 0.0 & ... \\
+\end{tabular}
+\end{adjustbox}
+
+\bigskip
+
+\begin{samepage}
+\textbf{Picture 4. Phoible Tones Example.}\nopagebreak
+
+\includegraphics[width=\textwidth]{images/phoible.png}
+\end{samepage}
+
+\subsubsection{SAILS Example}
+
+\textbf{Listing 3. SAILS Example.}
+\begin{lstlisting}
+ import lingtypology
+ 
+ #Get SAILS data for pages 'ICU3' and 'ICU4'
+ sails = lingtypology.db_apis.Sails('ICU3', 'ICU4')
+ df = sails.get_df()
+ df.head().to_csv('tables/sails.csv')
+ 
+ m = lingtypology.LingMap(df.language)
+ m.add_features(df.ICU3_desc)
+ #Use page description as legend title
+ m.legend_title = sails.feature_descriptions('ICU3').Description.at[0]
+ m.start_location = (9, -79)
+ m.start_zoom = 5
+ m.legend_position = 'bottomleft'
+ m.save_static('images/sails.png')
+\end{lstlisting}
+
+\textbf{Table 3. SAILS Example.}
+
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{ l | l | l | c | c | r | r | r }
+    ~ & language & coordinates & ICU3 & ICU3\_desc & ICU4 & ICU4\_desc \\
+    \hline
+    0 & Baniva & (5.26123, -67.56326999999999) & 1 & Yes & 0 & No \\
+    1 & Apolista & (-14.83, -68.66)" & 0 & No & ? & ? \\
+    2 & Yavitero & (2.800281, -68.08421899999999) & 1 & Yes & 0 & No \\
+    3 & Resígaro & (-2.48139, -71.35778) & 0 & No & 0 & No \\
+    4 & Tol & (14.66859,  -87.03719) & 0 & No & 0 & No \\
+\end{tabular}
+\end{adjustbox}
+
+\bigskip
+
+\begin{samepage}
+\textbf{Picture 5. SAILS Example.}\nopagebreak
+
+\includegraphics[width=\textwidth]{images/sails.png}
+\end{samepage}
+
+\newpage
+
+\section{Distribution of Languages with Ejective Consonants and Elevation}
+
+\subsection{Introduction}
+
+There are certain studies that suggest that geography may have influence on phonetics. For example there is a study that shows correlation between climatic areas and sonority classes~\parencite{climatesSonorants}.
+
+Another example of such studies is article by Caleb Everett that suggests influence of elevation on ejective consonants~\parencite{ejectives}.
+
+In this work the hypothesis that ejective consonants are more frequent in high elevation areas (higher than 1500 m) is proven for the data from the respective WALS chapter~\parencite{wals7}.
+
+In this section I check this hypothesis on PHOIBLE datasets.
+
+\subsection{Analysis}
+
+PHOIBLE database contains the following datasets:
+\begin{itemize}
+ \item SAPHON: South American Phonological Inventory Database~\parencite{saphon}.
+ \item AA: Alphabets of Africa~\parencite{aa}.
+ \item GM: `Christopher Green and Steven Moran extracted phonological inventories from secondary sources including grammars and phonological descriptions with the goal of attaining pan-Africa coverage`~\parencite{gm}.
+ \item PH: `Christopher Green and Steven Moran extracted phonological inventories from secondary sources including grammars and phonological descriptions with the goal of attaining pan-Africa coverage`~\parencite{gm}.
+ \item RA: Common Linguistic Features in Indian Languages: Phoentics~\parencite{ra}.
+ \item SPA: Stanford Phonology Archive~\parencite{spa}.
+ \item UPSID: UCLA Phonological Segment Inventory Database~\parencite{upsid}.
+\end{itemize}
+
+In this study RA and AA are not use because they either do not contain languages with ejectives or do not provide such information.
+
+For all the other datasets information on amount of ejectives was collected using Lingtypology.
+
+For all the languages I used the Lingtypology function that returns elevation for a given language based on its coordinates from Glottolog.
+
+To check the hypothesis that can be formulated like "is it true that languages higher than 1500m are more probably has ejectives", I calculated chi-square test of the distribution of languages with or without ejectives and higher or lower than 1500m.
+
+To the hypothesis from the Everett's article I added another hypothesis: is it true that if the language is higher, the more ejectives there are. To check this hypothesis I calculated two linear regressions for each dataset: one was calculated on the whole dataset of languages, the other was calculated only for languages that has ejectives.
+
+\subsection{Results}
+
+Results for the PHOIBLE datasets are stored in Table 4. The firts row is the name of the dataset, the second row is the p-value of the linear regression for languages with ejectives, the third row is the p-value of the linear regression for all languages.
+
+The code necessary to create this table is stored in the remote repository~\parencite{lingtypologyResearch}.
+
+\textbf{Table 4. Ejectives. P-value Table.}
+
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{ l | l | l | r | r }
+    ~  & Dataset  & Regression (with ejectives only)  & Regression (all languages)  & Chi2 Test \\
+    \hline
+    0  & UPSID  & 0.950559282993466  & 0.000044964081592  & 0.000032921681908 \\
+    1  & SPA  & 0.475539733143422  & 0.000005592842023  & 0.000176784757431 \\
+    2  & PH  & 0.731523538203316  & 0.392451413030472  & 0.160190111324293 \\
+    3  & GM  & 0.038586492300174  & 0.000000000000000  & 0.000000000000000 \\
+    4  & SAPHON  & 0.018874875617294  & 0.000000005031926  & 0.000377241915218 \\
+    \hline
+\end{tabular}
+\end{adjustbox}
+\bigskip
+
+There are two possible ways to treat these numbers. The simplest option is to treat the datasets as equal and take median p-values. In this case those would be 0.47554, 0.00001 and 0.00018 for the regressions and chi-square respectively.
+
+The second option is to treat the datasets as diffirent and consider only worldwide datasets. In this case, only UPSID and SPA will be considered.
+
+Nevertheless, in both options the result will be the same: the second regression and chi-square test show p-value < 0.05.
+
+This means that it is indeed true that the share of languages with ejectives is higher if the elevation is more than 1500m. This fact causes the linear regression for all languages (including the ones with no ejectives) to be statically significant. Nevertheless, it is not true that that the higher the language, the more ejectives there are due to the fact that the regression for the languages that has ejectives does not show statistically significant result.
+
+To demonstrate the results on the map, I provide map with languages that has ejectives (Picture 6) for UPSID dataset. It is noticable that these languages tend to be in high elevation areas, now it is proven statistically for Phoible datasets The code used to generate it is in Appendix: Listing 3.
+
+\textbf{Picture 6. Languages with Ejectives.}
+
+\includegraphics[width=\textwidth]{images/picture6.png}
+
+\subsection{Discussion}
+
+Of course, "correlation does not imply causation", and at the moment it is impossible to claim cause-and-effect relation for high elevation and presence of ejective consonants. Certain studies speculate why there may be cause-and-effect relations for geographical properties of regions and phonetics (e.g. \parencite{ejectives} and \parencite{climatesSonorants}. Nevertheless, it seems that further research is needed.\
+
+\newpage
+
+\section{High Elevation: Quantitative Research}
+
+\subsection{Introduction}
+Lingtypology allows accessing multiple features from linguistic databases. Therefore, I decided to find out whether high elevation may define distribution of other features from PHOIBLE database. Also, I decided to add morphosyntactic features from Aytotyp database.
+
+\subsection{PHOIBLE}
+
+To test this idea on PHOIBLE data I take all the phoneme properties amd test them as binary. So, in this part I ask questions like: "Is it true that if elevation is higher than 1500m, then the more likely it is to meet a language that has phonemes with the property?" I use chi-square test, then I find median p-value for all the datasets.
+The result is in Table 5. \textit{NaN} means that there are no languages where at least on phoneme has the given property. \textit{nan} means that there is not enough data to calculate chi-square.
+
+\textbf{Table 5. PHOIBLE All.}
+
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{ | l | c | c | c | c | c | c |}
+    \toprule
+    Dataset &     short &      long & delayedRelease &       tap &     trill &     nasal \\
+    \midrule
+    UPSID &    0.7304 &    0.6205 &         0.6106 &    0.9272 &    0.5174 &    0.7388 \\
+    SPA &    0.4974 &    0.8311 &         0.4335 &    0.9873 &    0.9605 &       nan \\
+    GM &    0.6587 &    0.0070 &         0.8435 &    0.8367 &    0.9499 &    0.1603 \\
+    RA &    0.0826 &    0.1125 &            nan &    0.1125 &    0.0622 &       nan \\
+    AA &       NaN &    0.7559 &            nan &    0.9076 &    0.4865 &       nan \\
+    PH &       NaN &    0.2549 &         0.9051 &    0.7908 &    0.1327 &    0.7573 \\
+    SAPHON &       NaN &    0.0287 &         0.4856 &    0.3496 &    0.8520 &    0.7113 \\
+    Median &  0.578074 &  0.254949 &       0.610642 &  0.836724 &  0.517375 &  0.725022 \\
+    \bottomrule
+    \toprule
+    Dataset &   lateral &    labial &     round & labiodental & distributed & strident \\
+    \midrule
+    UPSID &    0.1174 &       nan &    0.2667 &      0.8925 &      0.8872 &   0.5576 \\
+    SPA &    0.5463 &    0.3787 &    0.3787 &      0.1592 &      0.2771 &   0.7159 \\
+    GM &    0.6415 &       nan &    0.1603 &      0.5869 &      0.4575 &   0.3861 \\
+    RA &    0.9301 &       nan &       nan &      0.9249 &         nan &   0.3215 \\
+    AA &    0.0491 &       nan &       nan &      0.1428 &      0.8365 &      nan \\
+    PH &    0.3205 &       nan &       nan &      0.8006 &      0.0753 &   0.4896 \\
+    SAPHON &    0.0000 &       nan &       nan &      0.8457 &      0.0139 &   0.3705 \\
+    Median &  0.320519 &  0.378695 &  0.266709 &    0.800579 &    0.367317 &  0.43784 \\
+    \bottomrule
+    \toprule
+    Dataset &       low &     front &      back &     tense & retractedTongueRoot & advancedTongueRoot \\
+    \midrule
+    UPSID &    0.2667 &       nan &       nan &    0.2667 &              0.1243 &                NaN \\
+    SPA &    0.3787 &       nan &       nan &       nan &              0.8936 &             0.3787 \\
+    GM &    0.4430 &    0.1603 &    0.1603 &    0.1603 &              0.8242 &                NaN \\
+    RA &    0.3215 &       nan &       nan &       nan &              0.9301 &                NaN \\
+    AA &       nan &       nan &       nan &       nan &              0.2252 &                NaN \\
+    PH &    0.5906 &       nan &       nan &    0.2552 &              0.8665 &             0.2552 \\
+    SAPHON &       nan &       nan &       nan &       nan &                 NaN &             0.1864 \\
+    Median &  0.378695 &  0.160319 &  0.160319 &  0.255246 &            0.845344 &           0.255246 \\
+    \bottomrule
+    toprule
+    Dataset & epilaryngealSource & spreadGlottis & constrictedGlottis &    fortis & loweredLarynxImplosive &     click \\
+    \midrule
+    UPSID &                NaN &        0.3624 &             0.1280 &       NaN &                 0.5654 &       NaN \\
+    SPA &                NaN &        0.8858 &             0.1328 &    0.8083 &                 0.8776 &       NaN \\
+    GM &             0.1603 &        0.0480 &             0.0057 &       NaN &                 0.2245 &    0.1603 \\
+    RA &                NaN &        0.8941 &             0.1244 &       NaN &                 0.3215 &       NaN \\
+    AA &                NaN &        0.1302 &             0.6491 &       NaN &                 0.5679 &       NaN \\
+    PH &             0.2552 &        0.8090 &             0.1432 &       NaN &                 0.9455 &       NaN \\
+    SAPHON &                NaN &        0.0090 &             0.3423 &       NaN &                 0.6432 &       NaN \\
+    Median &           0.207783 &      0.362376 &           0.132809 &  0.808315 &               0.567919 &  0.160319 \\
+    \bottomrule
+\end{tabular}
+\end{adjustbox}
+\bigskip
+
+\subsection{Autotyp}
+
+Also, I checked this idea for numeric features from Autotyp. In this case linear regression was used.
+
+Among the 30 numeric features there were 4 features that showed p-value < 0.05.
+These features are represented in Table 6. In this table the features are represented as abbreviations that are not always clear. Therefore I provide the list of descriptions for features from the Autotyp repository~\parencite{autotyp}:
+\begin{itemize}
+ \item `Exponence: number of categories that are expressed in the same marker`.
+ \item `Rough approximation of the size of the possessum category in terms of the number of semantic classes covered`.
+ \item `Number of separately marked inflectional categories (including agreement) in position "post" of the verb`.
+ \item `Number of morpheme types included in a phonologically or grammatically coherent suffix domain`.
+\end{itemize}
+
+\textbf{Table 6. Autotyp Features.}
+
+\begin{tabular}{lll}
+\toprule
+Feature &                    Subfeature &     P-value \\
+\midrule
+Grammatical\_markers &                   Exponence.n &  0.00000000 \\
+NP\_structure &          NPHeadSemClassSize.n &  0.01766784 \\
+VInfl\_counts\_per\_position &          VInflCatAndAgrPost.n &  0.02895302 \\
+Word\_domains &  MphmTypesInCohSuffixDomain.n &  0.00196901 \\
+\bottomrule
+\end{tabular}
+\bigskip
+
+\subsection{Discussion}
+
+So, in the case of PHOIBLE features the result is negative: no statistically significant differences were found in distribution of languages having phonemes with certain characteristics and high elevation.
+
+In the case of Autotyp there were found several linear regressions with p-value < 0.05. However, I did not find any papers mentioning influence of geography on morphosynthax. Therefore, it is secure to say that futher research is needed.
+\newpage
+
+\section{WALS: Quantitative Research}
+
 
 
 \newpage
 
-\section{Bibliography}
-\printbibliography
-
+\section{References}
+\printbibliography[type=misc, title=Programming Tools]
+\printbibliography[type=manual, title=Documentation]
+\printbibliography[type=online, title=Online Recources]
+\printbibliography[type=article, title=Articles]
+\defbibfilter{other}{
+  type=book or
+  type=incollection
+}
+\printbibliography[filter=other, title=Other]
+\printbibliography[type=techreport]
 \newpage
 \section{Appendix}
 
@@ -884,6 +1178,7 @@ m.legend_title = 'Consonant Inventory'
 m.colors = lingtypology.gradient(5, 'yellow', 'green')
 m.save_static('LingtypologyStrokeAppearance.png')
 \end{lstlisting}
+\bigskip
 
 \textbf{Listing 2. Wals 1A map with default Folium strokes.}
 \begin{lstlisting}
@@ -899,6 +1194,27 @@ m.legend_title = 'Consonant Inventory'
 m.colors = lingtypology.gradient(5, 'yellow', 'green')
 m.unstroked = False
 m.save_static('FoliumStrokeAppearance.png')
+\end{lstlisting}
+\bigskip
+
+\textbf{Listing 3. Languages with Ejectives.}
+\begin{lstlisting}
+import lingtypology
+
+df = lingtypology.db_apis.Phoible(subset='UPSID', aggregated=False).get_df()
+#Get all languages with ejectives
+df = df[df.raisedLarynxEjective == '+']
+#Remove duplicates
+df = df.drop_duplicates(subset='Glottocode')
+
+m = lingtypology.LingMap(df.Glottocode, glottocode=True)
+#Tiles with terrain
+m.tiles = 'Stamen Terrain'
+m.title = 'Languages with Ejectives'
+m.radius = 5
+m.opacity = 0.5
+m.colors = ('blue',)
+m.save_static('images/Picture6.png')
 \end{lstlisting}
 
 \end{document} 

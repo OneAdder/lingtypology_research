@@ -629,9 +629,32 @@ Bases: \textit{object}
  
  \end{itemize}
  
+ \item \textbf{add\_line} and \textbf{add\_rectangle} \textit{(locations, tooltip='', popup='', color='black')}
+ 
+ \textbf{Parameters}:
+ \begin{itemize}
+  \item \textbf{locations}: list-like object of tuples
+  
+  Coordinates necessary ro draw the figure.
+  
+  \item \textbf{tooltip}: \textit{str}, default ''
+  
+  Tooltip for the figure.
+  
+  \item \textbf{popup}: \textit{str}, default ''
+  
+  Popup for the figure.
+  
+  \item \textbf{color}: \textbf{str}, default 'black'
+  
+  Color of the figure.
+  
+ \end{itemize}
+
+ 
  \item \textbf{create\_map} \textit{()}
  
- Create the map.
+ Create the map. Is visible in Jupyter Notebook.
  
  \textbf{Returns} folium.Map
  

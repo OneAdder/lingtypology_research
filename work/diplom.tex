@@ -15,7 +15,7 @@
 \usepackage{listings}
 \usepackage{color}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
-%\setmainfont{Times New Roman}
+%\setmainfont{Garamond}
 
 \usepackage{soul} 
 \usepackage{csvsimple}
@@ -110,7 +110,7 @@
 \begin{tabular}{p{0.4\linewidth}p{0.45\linewidth}}
 	Академический~руководитель образовательной программы & Научный руководитель \\
 	канд.~филологических наук, доц. & канд.~филологических наук, доц.\\
-	Ю.А.Ландер & Б.Орехов \\
+	Ю.А.Ландер & Б.В.Орехов \\
 	& \\ 
 	4 июня 2019 г.
 \end{tabular}
@@ -126,6 +126,18 @@
 
 \newpage
 \section{Introduction}
+There are multiple programming tools used by linguists. Such tools as PRAAT and ELAN have become essential instruments in phonological research~\parencite{praat}~\parencite{elan}.
+
+PRAAT is written in C and C++ programming languages and ELAN is written in Java. However, majority of other linguistic tools is written in Python~\parencite{python}.
+
+There are reasons for this.
+\begin{itemize}
+ \item Python concentrates on simplicity and readability of code~\parencite{zen}.
+ \item Python provides good support for Unicode which is crucial for linguistics~\parencite{unicode}~\parencite{python}.
+ \item There is a wide variety of Python libraries for scientific research such as SciPy or Pandas~\parencite{scipy}~\parencite{pandas}.
+ \item Multiple linguistic tools (see below) are already written for Python. It provides good community support.
+\end{itemize}
+
 There are multiple linguistic tools for Python. Most of them concentrate on natural language processing (e.g. NLTK \parencite{NLTK}). There are also some libraries that are there to assist linguistic research.
 
 A good example of such package is LingPy \parencite{List2017i}. It provides multiple calculation and visualisation algorithms for historical linguistics.
@@ -142,9 +154,11 @@ Also, there seems to be no Python tools for linguistic interactive mapping and r
 
 So, the first gap that my package attempts to cover is lack of Python tools that provide an interface for online linguistic databases. The second gap is lack of Python tools designed for linguistic interactive mapping.
 
-There is a package for the R programming language called 'lingtypology' \parencite{GeorgeMoroz2018}. It provedes an API for linguistic databases, a tool to work with Glottolog data and a tool to create interactive linguistic maps. My package was inspired by this R library and I consider it to be its counterpart for Python. Therefore my package is also called 'lingtypology'.
+There is a package for the R programming language called 'lingtypology' \parencite{GeorgeMoroz2018}. It provides an API for linguistic databases, a tool to work with Glottolog data and a tool to create interactive linguistic maps. My package was inspired by this R library and I consider it to be its counterpart for Python. Therefore my package is also called 'lingtypology'.
 
 One of the main purposes of my package is to provide a tool for easy reproducibility. Usually researchers manually find the data from multiple linguistic research. With my package it is possible to reproduce such research very quickly.
+
+To guarantee reproducibility of research made using LingTypology, it is distributed under GNU GPL License and therefore the whole source code is open.
 
 In the following chapters, I will describe technical aspects of 'lingtypology', provide documentation and several small studies to demonstrate its usability.
 
@@ -155,7 +169,7 @@ In the following chapters, I will describe technical aspects of 'lingtypology', 
 In this section I will provide description for \texttt{lingtypology}. To avoid repetition I will not include documentation into this section, it is present in Chapter~3~'Usage'.
 
 \subsection{General}
-\texttt{lingtypology} is written in the Python programming language version 3.7~\parencite{python}. It also supports versions 3.5 and 3.6. It is planned to keep maintaining all the versions of Python that are supported except for 2.7 branch. It is not supported due to its coming end of life in early 2020.
+\texttt{lingtypology} is written in the Python programming language, version 3.7~\parencite{python}. It also supports versions 3.5 and 3.6. It is planned to keep maintaining all the versions of Python that are supported except for 2.7 branch. It is not supported due to its coming end of life in early 2020.
 
 This project uses \texttt{git} distributed version control system. The source code of the project is stored in the remote repository~\parencite{MichaelVoronov2019}.
 
@@ -165,7 +179,7 @@ This project uses \texttt{git} distributed version control system. The source co
 \begin{samepage}
   \item Folium and Branca~\parencite{folium}. Folium is a Python wrapper for \texttt{leaflet} library for JavaScript~\parencite{leaflet}. Branca is the additional package for Folium that allows editing HTML code of the maps while Folium works with JavaScript only. 
   \item Pandas~\parencite{pandas}. Pandas introduces dataframes in Python.
-  \item pyglottolog~\parencite{Robert2Forkel2019}. pyglottolog application is used to extract necessary data from Glottolog.
+  \item pyglottolog~\parencite{Robert2Forkel2019}. \texttt{pyglottolog} application is used to extract necessary data from Glottolog.
   \item matplotlib~\parencite{matplotlib}. Matplotlib is a tool for creating plots.
   \item jinja2. A template engine.
   \item colour. A library for colors.
@@ -187,7 +201,7 @@ This project uses \texttt{git} distributed version control system. The source co
 \subsubsection{Data Files}
 \begin{itemize}
 \begin{samepage}
- \item \texttt{legend.html} HTML-template for map legends and title.
+ \item \texttt{legend.html} HTML-template for map legends and title. Based on the code from the Internet~\parencite{legend}.
  \item \texttt{language\_elevation\_mapping.json} data on elevation for each language from Glottolog.
  \item \texttt{autotyp\_lang\_mapping.json} mapping from language IDs from Autotyp to languages from Glottolog. Taken from the R counterpart under the rule of GNU GPL license~\parencite{GeorgeMoroz2018}.
  \item CSV file that starts with \texttt{glottolog-languoids} contains some of Glottolog data. It is generated with \texttt{pyglottolog} application with \texttt{glottolog --repos=glottolog languoids} command.
@@ -197,7 +211,7 @@ This project uses \texttt{git} distributed version control system. The source co
 
 
 \subsection{Interactive Maps}
-In this subsection I will describe \texttt{lingtypology.maps} module.
+In this subsection I will describe the obstacles overcome for creation of \texttt{lingtypology.maps} module.
 
 \subsubsection{General}
 \texttt{lingtypology.maps} contains the \texttt{LingMap} object. This object has attributes and methods that allow to render interactive maps. This object stores the data that a user wants to be rendered and when \texttt{create\_map} method is called all the data is processed and passed into \texttt{folium.map} object. Then it can be rendered as \texttt{HTML}.
@@ -215,10 +229,10 @@ It was processed using locally run Open Elevation API server~\parencite{OpenElev
 \subsubsection{Legend}
 Folium does not provide API to create a legend. Nevertheless, Lingtypology has a legend. It is created automatically based on the data that user passes to lingtypology.
 
-The templated for the legend is based on the HTML code from here~\parencite{legend}.
+The template for the legend is based on the HTML code from here~\parencite{legend}.
 
 \subsubsection{Strokes}
-The default appearance of standard \texttt{folium.CircleMarker} objects does not fit the needs of the package due to the wrong behaviour of strokes. Compare pictures 1 and 2.
+The default appearance of standard \texttt{folium.CircleMarker} objects does not fit the needs of the package due to the behaviour of strokes. Compare pictures 1 and 2.
 
 In the first picture strokes appear after each individual marker (the default behaviour of \texttt{folium}).
 In the second picture strokes appear after groups of markers. This bahaviour is impossible to achive using \texttt{folium.CircleMarker} objects by default. Therefore, instead of rendering one marker with stroke, \texttt{lingtypology} renders two markers: a marker without stroke and a black marker that 115\% larger. Markers are not added to the map right away. They are rendered in the proper order:
@@ -229,16 +243,14 @@ In the second picture strokes appear after groups of markers. This bahaviour is 
 
 The way markers are rendered in the second picture is the default behaviour of \texttt{lingtypology}. However, the option to use the standard behaviour of \texttt{foilum} is present as well.
 
-Both pictures were generated using \texttt{lingtypology}. Listings are in the attachment ('Listing 2' and 'Listing 1').
-
-~\linebreak
+Both pictures were generated using \texttt{lingtypology}. Listings are in the Appendixx ('Listing 2' and 'Listing 1').
+\bigskip
 
 Picture 1. Default Folium strokes.
 \nopagebreak
 
 \includegraphics[width=\textwidth]{images/FoliumStrokeAppearance.png}
-
-~\linebreak
+\bigskip
 
 Picture 2. Default Lingtypology strokes.
 \nopagebreak
@@ -263,19 +275,19 @@ During this research I received a request from one of the Folium developers to a
 
 Foium does not provide official support for rendering maps as PNG. Nevertheless, I found undocumented API that allows it (\texttt{folium.Map.\_to\_png} method).
 
-It was implemented into Lingtypology. However, this method requires additional application (Geckodriver) which is not included into main repositories of popular operating systems (Windows, macOS, Debian GNU/Linux, OpenSUSE etc.) and requires additional efforts to install. Due to this fact, this functionality of Lingtypology is marked as experimental until another way to implement is found. Also, this functionality requires additional Python dependency: selenium. It is used to render HTML as PNG.
+It was implemented into Lingtypology. However, this method requires additional application (Geckodriver) which is not included into main repositories of some popular operating systems (Windows, macOS, Debian GNU/Linux, OpenSUSE etc.) and requires additional efforts to install. Due to this fact, this functionality of Lingtypology is marked as experimental until another way to implement is found. Also, this functionality requires additional Python dependency: \texttt{selenium}. It is used to render HTML as PNG.
 
 \subsection{Glottolog}
 
-Lingtypology uses Glottolog data at its core. Therefore, accessing it online each time would significantly slow down the package. Glottolog data necessary for the package is included in the package.
+\texttt{lingtypology} uses Glottolog data at its core. Therefore, accessing it online each time would significantly slow down the package. Glottolog data necessary for the package is included in the package.
 
-However, Glottolog data is updated continually. I update included Glottolog data with each new release of Lingtypology. If user requires newer version of the data before new release, I provide the instruction how to update it manually.
+However, Glottolog data is updated continually. I update included Glottolog data with each new release of \texttt{lingtypology}. If user requires newer version of the data before new release, I provide the instruction how to update it manually.
 
 \texttt{lingtypology.glottolog} provides multiple functions to work with Glottolog data. Usage information may be found in Chapter 3.
 
 \subsection{Databases API}
 
-Lingtypology provides API for the following lingustic databases:
+\texttt{lingtypology} provides API for the following lingustic databases:
 \begin{itemize}
 \begin{samepage}
  \item WALS~\parencite{wals}.
@@ -291,9 +303,9 @@ Databases usually can be retrieved in CSV format. They are read into \texttt{pan
 
 \texttt{lingtypology.db\_apis} contains classes for each database. The module attemts to provide a unified API for all datasets, so there are methods that work the same way for all the databases.
 
-The moment when the database is downloaded depends on the database. In some cases the data is received right after the initialization of the class, in other cases the data is downloaded when \texttt{get\_df} method is called.
+The moment when the database is downloaded depends on the database. In some cases the data is received right after the initialization of the respective class, in other cases the data is downloaded when \texttt{get\_df} method is called.
 
-If the data in the database is divided into different pages, tables etc., Lingtypology is able to process and merge several of them.
+If the data in the database is divided into different pages, tables etc., \texttt{lingtypology} is able to process and merge several of them.
 
 \subsubsection{WALS}
 WALS: 'The World Atlas of Language Structures (WALS) is a large database of structural (phonological, grammatical, lexical) properties of languages gathered from descriptive materials (such as reference grammars) by a team of 55 authors.'~\parencite{wals}. The data from wals is retrieved from multiple web-pages that contain data for each chapter when \texttt{get\_df} method is called.
@@ -314,7 +326,7 @@ Unlike other databases supported by Lingtypology, PHOIBLE is not a unified datas
 \newpage
 
 \section{Usage}
-In this part I will provide full guide for 'lingtypology'. It is divided into four parts: Installation, Interactive Maps, Glottolog functions and the API for databases.
+In this part I will provide full guide for \texttt{lingtypology} package. It is divided into four parts: Installation, Interactive Maps, Glottolog functions and the API for databases.
 
 \subsection{Installation}
 The package is uploaded to PyPI software repository, therefore it can be installed with the \texttt{pip} utility with the following command:
@@ -457,6 +469,8 @@ Bases: \textit{object}
  \item \textbf{add\_custom\_coordinates} \textit{(custom\_coordinates)}
 
  Set custom coordinates. By default cooordinates for the languages are taken from the Glottolog database. If you have coordinates and want to use them, use this function.
+ 
+ It could be useful if you are using data from a dataset which provides coordinates and you do not need to rely on the Glottolog data.
         
  \textbf{Parameter} custom\_coordinates: \textit{list} of custom\_coordinates (\textit{tuples})
  
@@ -472,7 +486,7 @@ Bases: \textit{object}
  
  List of features. Amount of features should be equal to the amount of languages.
  By default, if you add features, a legend will appear. To shut it down set \textit{legend} attribute to \textit{False}.
- To change the title of the legend use \textit{legend_title} attribute.
+ To change the title of the legend use \textit{legend\_title} attribute.
  To change legend position use use \textit{legend\_position} attribute.
  
  \item \textbf{radius}: \textit{int}, default \textit{7}
@@ -493,7 +507,7 @@ Bases: \textit{object}
   \item \textbf{use\_shapes}: \textit{bool}, default \textit{False}
 
   Whether to use shapes instead of colors. This option allows to represent features as shapes.
-  Shapes are Unicode charaters like ⬤ or ◼. You can replace or add to default symbols by changing \textit{shapes} attribute.
+  Shapes are Unicode charaters. You can replace or add to default symbols by changing \textit{shapes} attribute.
   If colors are not a viable option for you, you can set this option to True.
   
  \end{itemize}
@@ -654,17 +668,17 @@ Bases: \textit{object}
  
  \item \textbf{create\_map} \textit{()}
  
- Create the map. Is visible in Jupyter Notebook.
+ Create the map. To display the map in Jupyter Notebook, use this function.
  
  \textbf{Returns} folium.Map
  
  \item \textbf{render}\textit{()}
  
- \textbf{Returns} the HTML code as \textit{str}
+ \textbf{Returns} the HTML code as \textit{str}. It might be useful in case you want to implement it into a website.
  
  \item \textbf{save} \textit{(path)}
  
- Save the map as HTML.
+ Save the map as HTML. It is useful when you need to include a map into a web-publication.
  
  \textbf{Parameter} path, \textit{str}
  
@@ -673,6 +687,8 @@ Bases: \textit{object}
  \item \textbf{save\_static} \textit{(path=None)}
  
  Save the map as PNG. Experimental function. Requires additional Python package Selenium and additional application Geckodriver.
+ 
+ It is useful for handouts, presentations and publications in paper journals.
  
  If path is not given \textbf{returns} the PNG as \textit{bytes}.
 
@@ -683,6 +699,8 @@ Bases: \textit{object}
 \textit{function} lingtypology.\textbf{merge} \textit{(*maps)}
 
 Accepts \textit{LingMap} objects and creates map of them.
+
+It is impossible to add, for example, features and minicharts. If you need it, you can create two \textit{LingMap} objects and then use the \textit{merge} function.
 
 \textbf{Parameter} *maps: \textit{LingMap} objects.
 
@@ -778,7 +796,7 @@ One of the objectives of LingTypology is to provide a simple interface for lingu
  
  In all cases \textbf{parameters} are optional. They depend on the particular class.
  
- In the case of \textit{Wals} it has optional \textit{str} parameter \textit{join\_how}: the way multiple WALS pages will be joined (either \textit{'inner'} or \textit{'outer'}). If the value is \textit{'inner'}, the resulting table will only contain data for languages mentioned in all the given pages. Else, the resulting table will contain values mentioned in at least one of the pages. Default: \textit{'inner'}
+ In the case of \textit{Wals} it has optional \textit{str} parameter \textit{join\_how}: the way multiple WALS pages will be joined (either \textit{'inner'} or \textit{'outer'}). If the value is \textit{'inner'}, the resulting table will only contain data for languages mentioned in all the given pages. Else, the resulting table will contain values mentioned in at least one of the pages. Default: \textit{'inner'}.
  
  In the case of \textit{Autotyp} and \textit{Phoible} it has optional \textit{list} parameter \textit{strip\_na}. It is a list of columns. If this parameter is given, the rows where some values in the given columns are not present will be dropped. Default: \textit{[]}.
  
@@ -878,7 +896,11 @@ Table that contain description for all the SAILS pages.
  m.add_heatmap(data[data._1A_desc == 'Large'].coordinates)
  #Add title
  m.title = 'Large Consonant Inventories'
- #Save as PNG
+ #Save as HTML:
+ #m.save('images/WalsHeatmap.htm')
+ #Render:
+ #html_string = m.render()
+ #Save as PNG:
  m.save_static('images/WalsHeatmap.png')
 \end{lstlisting}
 
@@ -967,6 +989,7 @@ Table that contain description for all the SAILS pages.
 \end{lstlisting}
 
 \textbf{Table 3. SAILS Example.}
+\nopagebreak
 
 \begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{ l | l | l | c | c | r | r | r }
@@ -990,7 +1013,7 @@ Table that contain description for all the SAILS pages.
 
 \newpage
 
-\section{Distribution of Languages with Ejective Consonants and Elevation}
+\section{High Elevation: Ejectives}
 
 \subsection{Introduction}
 
@@ -1000,7 +1023,7 @@ Another example of such studies is article by Caleb Everett that suggests influe
 
 In this work the hypothesis that ejective consonants are more frequent in high elevation areas (higher than 1500 m) is proven for the data from the respective WALS chapter~\parencite{wals7}.
 
-In this section I check this hypothesis on PHOIBLE datasets.
+The functionality of LingTypology allows to easily check this hypothesis on all the PHOIBLE datasets. And the fact that LingTypology is open-source and is distributed under free software license guarantees reproducibility of the findings.
 
 \subsection{Analysis}
 
@@ -1029,19 +1052,20 @@ To the hypothesis from the Everett's article I added another hypothesis: is it t
 
 Results for the PHOIBLE datasets are stored in Table 4. The firts row is the name of the dataset, the second row is the p-value of the linear regression for languages with ejectives, the third row is the p-value of the linear regression for all languages.
 
-The code necessary to create this table is stored in the remote repository~\parencite{lingtypologyResearch}.
+The code necessary to create this table is stored in the remote repository~\parencite[PHOIBLE: Quantitative Research.ipynb]{lingtypologyResearch}. This code is common 
+for all the work with Phoible and elevation. It uses \texttt{lingtypology}, \texttt{scipy} and \texttt{matplotlib} libraries~\parencite{scipy}~\parencite{matplotlib}.
 
 \textbf{Table 4. Ejectives. P-value Table.}
 
 \begin{adjustbox}{max width=\textwidth}
-\begin{tabular}{ l | l | l | r | r }
+\begin{tabular}{ l | l | c | c | c }
     ~  & Dataset  & Regression (with ejectives only)  & Regression (all languages)  & Chi2 Test \\
     \hline
-    0  & UPSID  & 0.950559282993466  & 0.000044964081592  & 0.000032921681908 \\
-    1  & SPA  & 0.475539733143422  & 0.000005592842023  & 0.000176784757431 \\
-    2  & PH  & 0.731523538203316  & 0.392451413030472  & 0.160190111324293 \\
-    3  & GM  & 0.038586492300174  & 0.000000000000000  & 0.000000000000000 \\
-    4  & SAPHON  & 0.018874875617294  & 0.000000005031926  & 0.000377241915218 \\
+    0  & UPSID  & 0.95055  & 0.00004  & 0.00003 \\
+    1  & SPA  & 0.47553  & 0.00001  & 0.00018 \\
+    2  & PH  & 0.73152  & 0.39245  & 0.16019 \\
+    3  & GM  & 0.03858  & 0.00000  & 0.00000 \\
+    4  & SAPHON  & 0.018874  & 0.00000  & 0.00038 \\
     \hline
 \end{tabular}
 \end{adjustbox}
@@ -1063,7 +1087,7 @@ To demonstrate the results on the map, I provide map with languages that has eje
 
 \subsection{Discussion}
 
-Of course, "correlation does not imply causation", and at the moment it is impossible to claim cause-and-effect relation for high elevation and presence of ejective consonants. Certain studies speculate why there may be cause-and-effect relations for geographical properties of regions and phonetics (e.g. \parencite{ejectives} and \parencite{climatesSonorants}. Nevertheless, it seems that further research is needed.\
+Of course, "correlation does not imply causation", and at the moment it is impossible to claim cause-and-effect relation for high elevation and presence of ejective consonants. Certain studies speculate why there may be cause-and-effect relations for geographical properties of regions and phonetics (e.g. \parencite{ejectives} and \parencite{climatesSonorants}. Nevertheless, it seems that further research is needed. LingTypology provides functionality that could be used in such studies.
 
 \newpage
 
@@ -1072,12 +1096,14 @@ Of course, "correlation does not imply causation", and at the moment it is impos
 \subsection{Introduction}
 Lingtypology allows accessing multiple features from linguistic databases. Therefore, I decided to find out whether high elevation may define distribution of other features from PHOIBLE database. Also, I decided to add morphosyntactic features from Aytotyp database.
 
+It is important to say, that such calculations in many cases do not lead to a positive result. LingTypology allows to perform such studies automatically. Therefore, time costs for such research is minimal.
+
 \subsection{PHOIBLE}
 
 To test this idea on PHOIBLE data I take all the phoneme properties amd test them as binary. So, in this part I ask questions like: "Is it true that if elevation is higher than 1500m, then the more likely it is to meet a language that has phonemes with the property?" I use chi-square test, then I find median p-value for all the datasets.
 The result is in Table 5. \textit{NaN} means that there are no languages where at least on phoneme has the given property. \textit{nan} means that there is not enough data to calculate chi-square.
 
-\textbf{Table 5. PHOIBLE All.}
+\textbf{Table 5. PHOIBLE All.}\nopagebreak
 
 \begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{ | l | c | c | c | c | c | c |}
@@ -1117,7 +1143,7 @@ The result is in Table 5. \textit{NaN} means that there are no languages where a
     SAPHON &       nan &       nan &       nan &       nan &                 NaN &             0.1864 \\
     Median &  0.378695 &  0.160319 &  0.160319 &  0.255246 &            0.845344 &           0.255246 \\
     \bottomrule
-    toprule
+    \toprule
     Dataset & epilaryngealSource & spreadGlottis & constrictedGlottis &    fortis & loweredLarynxImplosive &     click \\
     \midrule
     UPSID &                NaN &        0.3624 &             0.1280 &       NaN &                 0.5654 &       NaN \\
@@ -1137,8 +1163,10 @@ The result is in Table 5. \textit{NaN} means that there are no languages where a
 
 Also, I checked this idea for numeric features from Autotyp. In this case linear regression was used.
 
+All calculations are performed by the code from the remote repository~\parencite[PHOIBLE: Quantitative Research.ipynb]{lingtypologyResearch}. This code uses LingTypology and SciPy~\parencite{scipy}.
+
 Among the 30 numeric features there were 4 features that showed p-value < 0.05.
-These features are represented in Table 6. In this table the features are represented as abbreviations that are not always clear. Therefore I provide the list of descriptions for features from the Autotyp repository~\parencite{autotyp}:
+These features are represented in Table 6. In this table the features are represented as abbreviations that are not always clear. Therefore I provide the list of descriptions for features from the Autotyp repository~\parencite[metadata\_overview.csv]{autotyp}:
 \begin{itemize}
  \item `Exponence: number of categories that are expressed in the same marker`.
  \item `Rough approximation of the size of the possessum category in terms of the number of semantic classes covered`.
@@ -1165,11 +1193,52 @@ Word\_domains &  MphmTypesInCohSuffixDomain.n &  0.00196901 \\
 So, in the case of PHOIBLE features the result is negative: no statistically significant differences were found in distribution of languages having phonemes with certain characteristics and high elevation.
 
 In the case of Autotyp there were found several linear regressions with p-value < 0.05. However, I did not find any papers mentioning influence of geography on morphosynthax. Therefore, it is secure to say that futher research is needed.
+
+LingTypology provides easy means to reproduce my research on Phoible and Autotyp and expand it.
 \newpage
 
 \section{WALS: Quantitative Research}
 
+Sometimes it is interesting to try to find correlations that does not have any theoretical background. Doing it manually is very inefficient because of the time costs. LingTypology suggests a way to simplify such studies. It is possible to get multiple features from different online databases. This allows to prepare data for a study very easily and then perform statistical calculations for it.
 
+To demonstrate it, I used LingTypology to get all the WALS pages that has binary features (e.g. something is present in a language or not present) and calculated chi-square tests for each pair of pages.
+
+The result of such calculations is a matrix where headers and indexes are names of WALS features and values are p-values. This matrix is too large to be included into the text, so it is stored in the remote repository~\parencite[WALS: Quantitative Research.ipynb]{lingtypologyResearch}. \texttt{nan} means that there was not enough data to calculate chi-square (e.g. no common languages for the given pair of pages).
+
+No p-values below 0.05 were found. Therefore, the result of this study is negative.
+
+\newpage
+
+\section{Conclusion}
+
+Python programming language is widely used by linguists. In this thesis I have presented a new package for linguistic typology: LingTypology. It allows to access multiple online linguistic databases and create linguistic interactive maps.
+
+Both features of the package may be of use for typological studies.
+
+Databases API increases productivity of typological research allowing researchers to access massive amount of data automatically. Also, it significantly simplifies reproduction of linguistic studies.
+
+The package currently supports five online databases:
+\begin{itemize}
+ \item WALS~\parencite{wals}
+ \item Autotyp~\parencite{autotyp}
+ \item AfBo~\parencite{afbo}
+ \item SAILS~\parencite{sails}
+ \item PHOIBLE~\parencite{phoible}
+\end{itemize}
+
+To demonstrate the functionality of LingTypology, I included several typological studies made with the package.
+
+The first research reproduces some conclusions of Everett's article~\parencite{ejectives} on the data from the PHOIBLE datasets and reaches the same conclusion.
+
+Also, I performed two small quantitative studies on PHOIBLE, Autotyp and WALS databases to demonstrate the ease of finding correlations that do not have a theoretical background with LingTypology.
+
+The second feature -- interactive maps -- can be useful for visualisation of typological research. LingTypology package allows to draw linguistic maps with Glottolog data at its core~\parencite{HaraldHammarstrom2019}.
+
+The map could be rendered as HTML which is useful for implementing it into websites and including into web-publications. The other option is to freeze the map as PNG. It allows to include it into handouts and papers.
+
+By default the maps generated are colored. However, LingTypology allows to create black and white maps because some journals does not support color printing.
+
+LingTypology is a well-documented package. The full reference manual is included into Chapter 3 of this thesis. Full technical documentaion may be found in the docstrings. The repository of the package contain a full tutorial for LingTypology~\parencite{Govnov2019}.
 
 \newpage
 

@@ -17,6 +17,8 @@
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 %\setmainfont{Garamond}
 
+\usepackage[colorlinks,allcolors=black]{hyperref}
+
 \usepackage{soul} 
 \usepackage{csvsimple}
 
@@ -140,7 +142,7 @@ There are reasons for this.
 
 Many Python tools concentrate on natural language processing (e.g. NLTK \parencite{NLTK}). There are also some libraries that are there to assist linguistic research.
 
-A good example of such package is LingPy~\parencite{List2017i}. It provides multiple calculation and visualisation algorithms for historical linguistics.
+A good example of such package is LingPy~\parencite{List2017i}. It provides multiple calculation and visualization algorithms for historical linguistics.
 
 Another example of this kind of libraries is LingCorpora~\parencite{alexey}. It allows to perform queries in multiple online text corpora. It is in active development at the moment and already supports more than 25 corpora.
 
@@ -152,7 +154,7 @@ There is a tool for Glottolog~\parencite{HaraldHammarstrom2019} that provides an
 
 Also, there seems to be no Python tools for linguistic interactive mapping and researchers have to use libraries such as Folium~\parencite{folium} which is a general tool for interactive mapping and is not designed for linguistic maps specifically.
 
-So, the first gap that my package attempts to cover is lack of Python tools that provide an interface for online linguistic databases. The second gap is lack of Python tools designed for linguistic interactive mapping. The combination of these features may be useful for typological research that rely on data from linguistic databases.
+So, the first gap that my package attempts to cover is lack of Python tools that provide an interface for online linguistic databases. The second gap is lack of Python tools designed for linguistic interactive mapping. The combination of these features may be useful for typological research that rely on data from linguistic databases and require geographical visualization. There is a good example of such research \parencite{Blasieaav3218}. It relies on data from PHOIBLE \parencite{phoible} and Autotyp \parencite{autotyp} databases and uses geographical maps.
 
 There is a package for the R programming language called 'lingtypology' \parencite{GeorgeMoroz2018}. It provides an API for linguistic databases, a tool to work with Glottolog data and a tool to create interactive linguistic maps. My package was inspired by this R library and I consider it to be its counterpart for Python. Therefore my package is also called 'lingtypology'. The Python counterpart is necessary because now Python is de-facto standard language for linguistic tools and a project is more likely to receive extra support from community. Among other reasons there are: better readability of Python code than readability of R code, lower memory consumption by Python interpreter and more flexibility because, unlike R which is mostly restricted to scientific tools, Python is a versatile language. Therefore, creating a Python counterpart will allow to use the package within other linguistic tools and implement it into websites. Due to these reasons, Python counterpart of the R package seems to be necessary.
 
@@ -231,8 +233,12 @@ Also, \texttt{lingtypology.maps} contain several supplementary functions.
 Full description of the functions and the \texttt{LingMap} class can be found in Chapter~3.
 
 \subsubsection{Elevation Data}
-\texttt{lingtypology} provides elevation data for each language in Glottolog (as of version 3.4). The source if this data is SRTM dataset~\parencite{SRTM}.
+\texttt{lingtypology} provides elevation data for each language in Glottolog (as of version 3.4). The source of this data is SRTM dataset~\parencite{SRTM}.
 It was processed using locally run Open Elevation API server~\parencite{OpenElevation}.
+
+Open Elevation API is an API that allows to get elevation data for give coordinates from the given GeoTIFF dataset. By default it uses SRTM dataset. Open Elevation API is accessible online. However, it was not able to handle the request that I sent (around 8000 coordinates). Open Elevation is open-source, so I was able to deploy it locally and run it with the SRTM-data. Then I sent my request to my locally deployed Open Elevation API server and got the result for the coordinates from the Glottolog dataset.
+
+After that, I mapped the elevation data to the languages from Glottolog \parencite[language\_elevation\_mapping.json]{MichaelVoronov2019}.
 
 \subsubsection{Legend}
 Folium does not provide API to create a legend. Nevertheless, Lingtypology has a legend. It is created automatically based on the data that user passes to lingtypology.
@@ -1123,7 +1129,9 @@ Of course, "correlation does not imply causation", and at the moment it is impos
 \section{High Elevation: Quantitative Research}
 
 \subsection{Introduction}
-Lingtypology allows accessing multiple features from linguistic databases. Therefore, I decided to find out whether high elevation may define distribution of other features from PHOIBLE database. Also, I decided to add morphosyntactic features from Aytotyp database.
+Lingtypology allows accessing multiple features from linguistic databases. Therefore, I decided to find out whether high elevation may define distribution of other features from PHOIBLE database.
+
+There seems to be no scientific research on correlation of elevation and morhological or synthactic features. Nevertheless, I decided to add morphosyntactic features from Aytotyp database.
 
 It is important to say, that such calculations in many cases do not lead to a positive result. LingTypology allows to perform such studies automatically. Therefore, time costs for such research is minimal.
 
@@ -1241,6 +1249,21 @@ To demonstrate it, I used LingTypology to get all the WALS pages that has binary
 
 It was done to find out whether there are implicative universaliae or frequentaliae connecting the language features from these WALS pages.
 
+The full code of the program is mostly general (calculating chi-square, assembling the matrix etc.). I include the part that uses lingtypology into the listing below. This code gets all features from the WALS database. The full code is stored in the remote repository \parencite[WALS: Quantitative Research.ipynb]{lingtypologyResearch}.
+\bigskip
+
+\noindent
+\begin{minipage}{\textwidth}
+\captionof{lstlisting}{WALS: All Features}
+\begin{lstlisting}
+ from lingtypology.db_apis import Wals
+ features_list = Wals().features_list
+ w = Wals(*features_list)
+ data = w.get_df(join_how='outer')
+\end{lstlisting}
+\end{minipage}
+\bigskip
+
 The result of such calculations is matrix where headers and indexes are names of WALS features and values are p-values. This matrix is too large to be included into the text, so it is stored in the remote repository~\parencite[WALS: Quantitative Research.ipynb]{lingtypologyResearch}. For convenience, I include small part of it in the table below. \texttt{nan} means that there was not enough data to calculate chi-square (e.g. no common languages for the given pair of pages).
 
 No p-values below 0.05 were found. Therefore, the result of this study is negative. This result is the expected one because none of the tested features are known to correlate.
@@ -1282,7 +1305,7 @@ In the first study, I try to find a correlation with other PHOIBLE features and 
 
 In the second study I search for implicative universaliae in WALS. To gain the result I check all pairs of binary features from WALS and calculate chi-square test for each pair. The result is negative.
 
-The second feature of LingTypology -- interactive maps -- can be useful for visualisation of typological research. LingTypology package allows to draw linguistic maps with Glottolog data at its core~\parencite{HaraldHammarstrom2019}.
+The second feature of LingTypology -- interactive maps -- can be useful for visualization of typological research. LingTypology package allows to draw linguistic maps with Glottolog data at its core~\parencite{HaraldHammarstrom2019}.
 
 The map could be rendered as HTML which is useful for implementing it into websites and including into web-publications. The other option is to freeze the map as PNG. It allows to include it into handouts and papers.
 

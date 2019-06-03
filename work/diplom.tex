@@ -112,7 +112,7 @@
 \begin{tabular}{p{0.4\linewidth}p{0.45\linewidth}}
     Академический~руководитель образовательной программы & Научный руководитель \\
     канд.~филологических наук, доц. & канд.~филологических наук, доц.\\
-    Ю.А.Ландер & Б.В.Орехов \\
+    Ю. А. Ландер & Б. В. Орехов \\
     & \\ 
     4 июня 2019 г.
 \end{tabular}
@@ -137,7 +137,7 @@ There are reasons for this.
  \item Python concentrates on simplicity and readability of code~\parencite{zen}.
  \item Python provides good support for Unicode which is crucial for linguistics~\parencite{unicode}~\parencite{python}.
  \item There is a wide variety of Python libraries for scientific research such as SciPy or Pandas~\parencite{scipy}~\parencite{pandas}.
- \item Multiple linguistic tools (see below) are already written for Python. It provides good community support.
+ \item Multiple linguistic tools (see below) are already written for Python. It means that there is established community of linguists using Python.
 \end{itemize}
 
 Many Python tools concentrate on natural language processing (e.g. NLTK \parencite{NLTK}). There are also some libraries that are there to assist linguistic research.
@@ -156,14 +156,16 @@ Also, there seems to be no Python tools for linguistic interactive mapping and r
 
 So, the first gap that my package attempts to cover is lack of Python tools that provide an interface for online linguistic databases. The second gap is lack of Python tools designed for linguistic interactive mapping. The combination of these features may be useful for typological research that rely on data from linguistic databases and require geographical visualization. There is a good example of such research \parencite{Blasieaav3218}. It relies on data from PHOIBLE \parencite{phoible} and Autotyp \parencite{autotyp} databases and uses geographical maps.
 
-There is a package for the R programming language called 'lingtypology' \parencite{GeorgeMoroz2018}. It provides an API for linguistic databases, a tool to work with Glottolog data and a tool to create interactive linguistic maps. My package was inspired by this R library and I consider it to be its counterpart for Python. Therefore my package is also called 'lingtypology'. The Python counterpart is necessary because now Python is de-facto standard language for linguistic tools and a project is more likely to receive extra support from community. Among other reasons there are: better readability of Python code than readability of R code, lower memory consumption by Python interpreter and more flexibility because, unlike R which is mostly restricted to scientific tools, Python is a versatile language. Therefore, creating a Python counterpart will allow to use the package within other linguistic tools and implement it into websites. Due to these reasons, Python counterpart of the R package seems to be necessary.
+There is a package for the R programming language called 'lingtypology' \parencite{GeorgeMoroz2018}. It provides an API for linguistic databases, a tool to work with Glottolog data and a tool to create interactive linguistic maps. My package was inspired by this R library and I consider it to be its counterpart for Python. Therefore my package is also called 'lingtypology'. 
+
+The Python counterpart is necessary because now Python is de-facto standard language for linguistic tools and a project is more likely to receive extra support from community. Among other reasons there are: better readability of Python code than readability of R code, lower memory consumption by Python interpreter and more flexibility because, unlike R which is mostly restricted to scientific tools, Python is a versatile language. Therefore, creating a Python counterpart will allow to use the package within other linguistic tools and implement it into websites. Due to these reasons, Python counterpart of the R package seems to be necessary.
 
 One of the main purposes of my package is to provide a tool for easy reproducibility. Lack of reprodicibility is a severe problem in any area of science. There is an article on this problem that states that there `are many technical reasons why experimental results, particularly in cancer research, cannot be reproduced, including unrecognized variables in the complex experimental model, 
 poor documentation of procedures, selective reporting of the most-positive findings, 
 misinterpretation of technical noise as biological signal and, in the most extreme 
 cases, fabrication of data.`~\parencite{Pusztai2013}
 
-Unfortunately, these problems also apply to typological studies. LingTypology presents an interface for linguistic databases and, as a computer program, the result will be always the same. To guarantee reproducibility of research made using LingTypology, it is distributed under GNU GPL License and therefore the whole source code is open so that anybody could read it and make sure it works as expected.
+Unfortunately, these problems also apply to typological studies. LingTypology presents an interface for linguistic databases and, as a computer program, the result will be always the same. To guarantee reproducibility of research made using LingTypology, it is distributed under GNU GPL License and therefore the whole source code is open so that anybody could read it and make sure it works as expected. Or suggest a fix if something does not work as expected.
 
 Also, usually researchers manually find the data from multiple linguistic research. With my package it is possible to reproduce such research very quickly.
 
@@ -228,7 +230,7 @@ In this subsection I will describe the obstacles overcome for creation of \textt
 For example, method \texttt{add\_overlapping\_features} applies different colors from \texttt{colors} atrribute to each feature, finds out the proper size of markers based on the amount of features for each language, creates 
 \texttt{folium.CircleMarker} objects, adds popups and tooltips to the markers if necessary and then adds the markers to the map.
 
-Also, \texttt{lingtypology.maps} contain several supplementary functions.
+Also, \texttt{lingtypology.maps} contains several supplementary functions.
 
 Full description of the functions and the \texttt{LingMap} class can be found in Chapter~3.
 
@@ -236,7 +238,7 @@ Full description of the functions and the \texttt{LingMap} class can be found in
 \texttt{lingtypology} provides elevation data for each language in Glottolog (as of version 3.4). The source of this data is SRTM dataset~\parencite{SRTM}.
 It was processed using locally run Open Elevation API server~\parencite{OpenElevation}.
 
-Open Elevation API is an API that allows to get elevation data for give coordinates from the given GeoTIFF dataset. By default it uses SRTM dataset. Open Elevation API is accessible online. However, it was not able to handle the request that I sent (around 8000 coordinates). Open Elevation is open-source, so I was able to deploy it locally and run it with the SRTM-data. Then I sent my request to my locally deployed Open Elevation API server and got the result for the coordinates from the Glottolog dataset.
+Open Elevation API is an API that allows to get elevation data for give coordinates from the given GeoTIFF dataset. By default it uses SRTM dataset. Open Elevation API is accessible online. However, it was not able to handle the request that I sent (around 8000 coordinates). Open Elevation is open-source, so I was able to deploy it locally and run it with the SRTM-data. Then I sent my request to my locally deployed Open Elevation API server and got the result for the coordinates from the Glottolog dataset. Glottolog provides only one point for each language. This point was used because there seems to be no databases that provide locations for languages as polygons (at least in open access).
 
 After that, I mapped the elevation data to the languages from Glottolog \parencite[language\_elevation\_mapping.json]{MichaelVoronov2019}.
 
@@ -292,7 +294,7 @@ During this research I received a request from one of the Folium developers to a
 
 Foium does not provide official support for rendering maps as PNG. Nevertheless, I found undocumented API that allows it (\texttt{folium.Map.\_to\_png} method).
 
-It was implemented into Lingtypology. However, this method requires additional application (Geckodriver) which is not included into main repositories of some popular operating systems (Windows, macOS, Debian GNU/Linux, OpenSUSE etc.) and requires additional efforts to install. Due to this fact, this functionality of Lingtypology is marked as experimental until another way to implement is found. Also, this functionality requires additional Python dependency: \texttt{selenium}. It is used to render HTML as PNG.
+It was implemented into LingTypology. However, this method requires additional application (Geckodriver) which is not included into main repositories of some popular operating systems (Windows, macOS, Debian GNU/Linux, OpenSUSE etc.) and requires additional efforts to install. Due to this fact, this functionality of Lingtypology is marked as experimental until another way to implement is found. Also, this functionality requires additional Python dependency: \texttt{selenium}. It is used to render HTML as PNG.
 
 \subsection{Glottolog}
 
@@ -355,7 +357,7 @@ Interactive maps can be created with \texttt{lingtypology.maps} module.
 
 \subsubsection{LingMap Class}
 
-\textit{class} lingtypology.\textbf{LingMap} \textit{(languages=[], glottocode=False)}
+\textit{class} lingtypology.maps.\textbf{LingMap} \textit{(languages=[], glottocode=False)}
 
 Bases: \textit{object}
 
@@ -713,7 +715,7 @@ Bases: \textit{object}
 
 \subsubsection{Functions}
 
-\textit{function} lingtypology.\textbf{merge} \textit{(*maps)}
+\textit{function} lingtypology.maps.\textbf{merge} \textit{(*maps)}
 
 Accepts \textit{LingMap} objects and creates map of them.
 
@@ -724,7 +726,7 @@ It is impossible to add, for example, features and minicharts. If you need it, y
 \textbf{Returns} lingtypology.maps.LingMap
 \medskip
 
-\textit{function} lingtypology.\textbf{get\_elevations} \textit{(languages)}
+\textit{function} lingtypology.maps.\textbf{get\_elevations} \textit{(languages)}
 
 Get data on elevation for languages. More information in Chapter 2, Paragraph 4.2.
 
@@ -733,7 +735,7 @@ Get data on elevation for languages. More information in Chapter 2, Paragraph 4.
 \textbf{Returns} list
 \medskip
 
-\textit{function} lingtypology.\textbf{gradient} \textit{(iterations, color1='white', color2='green')}
+\textit{function} lingtypology.maps.\textbf{gradient} \textit{(iterations, color1='white', color2='green')}
 
 Creates color gradient of given length.
 
@@ -827,7 +829,7 @@ One of the objectives of LingTypology is to provide a simple interface for lingu
 
 \subsubsection{WALS}
 
-\textit{class} \textbf{Wals} \textit{(*features)}
+\textit{class} lingtypology.db\_apis.\textbf{Wals} \textit{(*features)}
 \medskip
 
 \textbf{Parameter} features, \textit{list}
@@ -841,7 +843,7 @@ The general citation for \textbf{all} the WALS pages.
 
 \subsubsection{Autotyp}
 
-\textit{class} \textbf{Autotyp} \textit{(*tables)}
+\textit{class} lingtypology.db\_apis.\textbf{Autotyp} \textit{(*tables)}
 \medskip
 
 \textbf{Parameter} *tables: \textit{list} of strings
@@ -849,7 +851,7 @@ The general citation for \textbf{all} the WALS pages.
 List of the Autoptyp tables that will be merged in the resulting table. E.g. \textit{['gender']}
 
 \subsubsection{AfBo}
-\textit{class} \textbf{AfBo} \textit{(*features)}
+\textit{class} lingtypology.db\_apis.\textbf{AfBo} \textit{(*features)}
 \medskip
 
 \textbf{Parameter} *features: \textit{list} of strings
@@ -858,7 +860,7 @@ List of Autotyp features that will be present in the resulting table. E.g. \text
 
 \subsubsection{SAILS}
 
-\textit{class} \textbf{Sails} \textit{(*features)}
+\textit{class} lingtypology.db\_apis.\textbf{Sails} \textit{(*features)}
 \medskip
 
 \textbf{Parameter} *features: \textit{list} of strings
@@ -877,7 +879,7 @@ Table that contain description for all the SAILS pages.
 
 \subsubsection{PHOIBLE}
 
-\textit{class} \textbf{Phoible} \textit{(subset='all', aggregated=True)}
+\textit{class} lingtypology.db\_apis.\textbf{Phoible} \textit{(subset='all', aggregated=True)}
 \medskip
 
 \textbf{Parameters}:

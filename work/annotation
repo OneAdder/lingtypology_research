@@ -1,0 +1,23 @@
+Python programming language is widely used by linguists. In this thesis I present a new package for linguistic typology: LingTypology. The package is a Python counterpart of the R package of the same name.  It allows to access multiple online linguistic databases and create linguistic interactive maps.
+
+Both features of the package may be of use for typological studies.
+
+Databases API increases productivity of typological research allowing researchers to access massive amount of data automatically. Also, it simplifies reproduction of linguistic studies.
+
+To demonstrate the functionality of LingTypology, I included several typological studies made with the package.
+
+The first research reproduces some conclusions of Everett’s article about ejectives and high elevation on the data from the PHOIBLE datasets and reaches the same conclusion: share of languages with ejective consonants is higher in high elevation areas.
+
+Also, I performed two small quantitative studies on PHOIBLE, Autotyp and WALS databases to demonstrate the ease of finding correlations that do not have
+a theoretical background with LingTypology.
+
+In the first study, I try to find a correlation with other PHOIBLE features and elevation and Autotyp features and elevation. In the case of PHOIBLE I used
+chi-square statistical test and in the case of Autotyp I used linear regression. On PHOIBLE data the result was negative while on Autotyp data some regressions had p-value < 0.05. In Autotyp there were several linear regressions that showed p-value < 0.05.
+
+In the second study I search for implicative universaliae in WALS. To gain the result I check all pairs of binary features from WALS and calculate chi-square test for each pair. The result is negative.
+
+The second feature of LingTypology – interactive maps – can be useful for visualization of typological research. LingTypology package allows to draw linguistic maps with Glottolog data at its core.
+
+The map could be rendered as HTML which is useful for implementing it into websites and including into web-publications. The other option is to freeze the map as PNG. It allows to include it into handouts and papers.
+
+By default the maps generated are colored. However, LingTypology allows to create black and white maps because some journals does not support color printing.

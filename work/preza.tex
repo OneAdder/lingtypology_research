@@ -1,11 +1,44 @@
 \documentclass{beamer}
-
+ 
 \usepackage[utf8]{inputenc}
-\usetheme{default}
 
-\begin{document}
-\title{Python Library for Linguistic Typology}  
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguage{russian}
+
+\usepackage[autostyle]{csquotes}
+\usepackage[backend=biber,style=authoryear]{biblatex}
+\addbibresource{mybiblio.bib}
+ 
+\title{Python Library for Linguistic Typology}
 \author{Michael Voronov}
+\institute{HSE}
+\date{2019}
+ 
+\begin{document}
+ 
+\frame{\titlepage}
+ 
+\begin{frame}
+\frametitle{Introduction}
+Problem:
+\begin{itemize}
+ \item No Python tools for online linguistic databases queries.
+ \item No Python tools for linguistic interactive mapping.
+\end{itemize}
+What exists?
+\begin{itemize}
+ \item R package \textbf{lingtypology} that does both.
+\end{itemize}
+Why Python?
+\begin{itemize}
+ \item De-facto standard language among linguists.
+ \item A lot of scientific lebraries (Pandas, SciPy etc.)
+ \item Relatively high speed.
+\end{itemize}
 
 
+\end{frame}
+ 
 \end{document}
+

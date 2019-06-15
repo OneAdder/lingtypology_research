@@ -10,6 +10,9 @@
 \setlength\fboxsep{3pt}
 \setlength\fboxrule{1pt}
 
+\usepackage{array,tabularx,tabulary,booktabs}
+\usepackage{adjustbox} 
+
 \usepackage{pythonhighlight}
 \usepackage{listings}
 \usepackage{lstautogobble}
@@ -122,6 +125,134 @@ m.create_map()
 \begin{frame}
 \frametitle{Maps}
 \includegraphics[width=\textwidth]{images/FeaturesMap.png}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Maps}
+\begin{python}
+m = lingtypology.LingMap(data.language)
+m.add_minicharts(data.consonants, data.vowels)
+m.create_map()
+\end{python}
+\includegraphics[width=\textwidth]{images/MinichartsMap.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Databases}
+\begin{itemize}
+ \item WALS: The World Atlas of Language Structures \parencite{wals}.
+ \item Autotyp: an international network of typological linguistic databases \parencite{autotyp}.
+ \item AfBo: A world-wide survey of affix borrowing \parencite{afbo}.
+ \item SAILS: The South American Indigenous Language Structures \parencite{sails}.
+ \item PHOIBLE: ... is a repository of cross-linguistic phonological inventory data \parencite{phoible}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{WALS}
+\begin{python}
+w = lingtypology.datasets.Wals('1a')
+w.get_df().head(10)
+\end{python}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{llllllllrl}
+\toprule
+{} & wals\_code &           language &                genus &               family &                      coordinates &   \_1A\_area &                  \_1A &  \_1A\_num &          \_1A\_desc \\
+\midrule
+0 &       kiw &   Kiwai (Southern) &              Kiwaian &              Kiwaian &                    (-8.0, 143.5) &  Phonology &             1. Small &        1 &             Small \\
+1 &       xoo &               !Xóõ &                   Tu &                   Tu &                    (-24.0, 21.5) &  Phonology &             5. Large &        5 &             Large \\
+2 &       ani &              //Ani &           Khoe-Kwadi &           Khoe-Kwadi &  (-18.9166666667, 21.9166666667) &  Phonology &             5. Large &        5 &             Large \\
+3 &       abi &             Abipón &     South Guaicuruan &           Guaicuruan &                   (-29.0, -61.0) &  Phonology &  2. Moderately small &        2 &  Moderately small \\
+4 &       abk &             Abkhaz &  Northwest Caucasian &  Northwest Caucasian &            (43.0833333333, 41.0) &  Phonology &             5. Large &        5 &             Large \\
+5 &       acm &           Achumawi &          Palaihnihan &                Hokan &                   (41.5, -121.0) &  Phonology &  2. Moderately small &        2 &  Moderately small \\
+6 &       ach &               Aché &         Tupi-Guaraní &               Tupian &         (-25.25, -55.1666666667) &  Phonology &             1. Small &        1 &             Small \\
+7 &       aco &              Acoma &              Keresan &              Keresan &  (34.9166666667, -107.583333333) &  Phonology &             5. Large &        5 &             Large \\
+8 &       adz &             Adzera &              Oceanic &         Austronesian &                  (-6.25, 146.25) &  Phonology &  2. Moderately small &        2 &  Moderately small \\
+9 &       agh &              Aghem &              Bantoid &          Niger-Congo &        (6.666666666669999, 10.0) &  Phonology &           3. Average &        3 &           Average \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{WALS}
+\begin{python}
+w = lingtypology.datasets.Wals('1a', '2a')
+w.get_df().head()
+\end{python}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{llclclc}
+\toprule
+{} &           language & ... & \_1A & ... & \_2A & ... \\
+\midrule
+0 &   Kiwai (Southern) & ... &  1. Small & ... &  2. Average (5-6) & ...\\
+1 &               !Xóõ & ... &  5. Large & ... &  2. Average (5-6) & ...\\
+2 &              //Ani & ... &  5. Large & ... &  2. Average (5-6) & ...\\
+3 &             Abipón & ... &  2. Moderately small & ... &  2. Average (5-6) & ...\\
+4 &             Abkhaz & ... &  5. Large & ... &    1. Small (2-4) & ...\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Examples: WALS Features}
+\begin{python}
+wals_page = lingtypology.datasets.Wals('1a').get_df()
+m = lingtypology.LingMap(wals_page.language)
+m.add_custom_coordinates(wals_page.coordinates)
+m.add_features(
+    wals_page._1A,
+    colors=lingtypology.gradient(5, 'yellow', 'green')
+)
+m.legend_title = 'Consonant Inventory'
+m.create_map()
+\end{python}
+\end{frame}
+
+\begin{frame}
+\frametitle{Examples: WALS Features}
+\includegraphics[width=\textwidth]{images/LingtypologyStrokeAppearance.png}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Examples: WALS Heatmap}
+\begin{python}
+wals = lingtypology.datasets.Wals('1A')
+data = wals.get_df()
+m = lingtypology.LingMap()
+m. add_heatmap(data[data._1A_desc == 'Large'].coordinates)
+m.create_map()
+\end{python}
+\end{frame}
+
+\begin{frame}
+\frametitle{Examples: WALS Heatmap}
+\includegraphics[width=\textwidth]{images/WalsHeatMap2.png}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Examples: PHOIBLE Tones}
+\begin{python}
+p = lingtypology.datasets.Phoible(subset='SPA')
+df = p.get_df(strip_na=['tones'])
+m = lingtypology.LingMap(df.language)
+m.add_features(df.tones, numeric=True)
+m.colormap_colors = ('white', 'red')
+m.legend_title = 'Tones'
+m.legend_position = 'bottomleft'
+m.create_map()
+\end{python}
+\end{frame}
+
+\begin{frame}
+\frametitle{Examples: PHOIBLE Tones}
+\includegraphics[width=\textwidth]{images/PHOIBLE.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{???}
+
 \end{frame}
 
 

@@ -251,8 +251,166 @@ m.create_map()
 \end{frame}
 
 \begin{frame}
-\frametitle{???}
+\frametitle{Verification of Statistical Studies in the Context of Reproducibility}
+\begin{itemize}
+ \item Article that demonstrates relationship between presence of ejectives and high elevation based on WALS data \parencite{ejectives}.
+ \item Reproduce on PHOIBLE data.
+\end{itemize}
+\end{frame}
 
+\begin{frame}[fragile]
+\frametitle{Verification of Statistical Studies in the Context of Reproducibility}
+\begin{python}
+upsid = lingtypology.datasets.Phoible(
+    subset='UPSID',
+    aggregated=False
+).get_df()
+amount_of_ejectives = upsid[
+    upsid.raisedLarynxEjective == '+'
+].groupby('Glottocode').size()
+languages = [
+    lingtypology.glottolog.get_by_glot_id(glot_id) \
+    for glot_id in amount_of_ejectives.index
+]
+upsid_ejectives = pandas.DataFrame({
+    'language': languages,
+    'ejectives': amount_of_ejectives,
+    'elevation': lingtypology.get_elevations(languages),
+})
+m = lingtypology.LingMap(upsid_ejectives.language)
+m.add_features(upsid_ejectives.elevation, numeric=True)
+m.create_map()
+\end{python}
+\end{frame}
+
+\begin{frame}
+\frametitle{Verification of Statistical Studies in the Context of Reproducibility}
+\includegraphics[width=\textwidth]{images/EjectivesElevation.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Verification of Statistical Studies in the Context of Reproducibility}
+PHOIBLE datasets:
+\begin{itemize}
+ \item SAPHON: South American Phonological Inventory Database~\parencite{saphon}.
+ \item AA: Alphabets of Africa~\parencite{aa}.
+ \item GM: `Christopher Green and Steven Moran extracted phonological inventories from secondary sources including grammars and phonological descriptions with the goal of attaining pan-Africa coverage`~\parencite{gm}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Verification of Statistical Studies in the Context of Reproducibility}
+\begin{itemize}
+ \item PH: `Christopher Green and Steven Moran extracted phonological inventories from secondary sources including grammars and phonological descriptions with the goal of attaining pan-Africa coverage`~\parencite{gm}.
+ \item RA: Common Linguistic Features in Indian Languages: Phoentics~\parencite{ra}.
+ \item SPA: Stanford Phonology Archive~\parencite{spa}.
+ \item UPSID: UCLA Phonological Segment Inventory Database~\parencite{upsid}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Verification of Statistical Studies in the Context of Reproducibility}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{l|l|ccc}
+    \toprule
+    ~  & Dataset  & Regression (with ejectives only)  & Regression (all languages)  & Chi2 Test \\
+    \midrule
+    0  & UPSID  & 0.95055  & 0.00004  & 0.00003 \\
+    1  & SPA  & 0.47553  & 0.00001  & 0.00018 \\
+    2  & PH  & 0.73152  & 0.39245  & 0.16019 \\
+    3  & GM  & 0.03858  & 0.00000  & 0.00000 \\
+    4  & SAPHON  & 0.018874  & 0.00000  & 0.00038 \\
+    \bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{frame}
+
+\begin{frame}
+\frametitle{Verification of Statistical Studies in the Context of Reproducibility}
+\includegraphics[width=\textwidth]{images/linear_regression_raisedLarynxEjective_all.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Verification of Statistical Studies in the Context of Reproducibility}
+\includegraphics[width=\textwidth]{images/linear_regression_raisedLarynxEjective_only.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Verification of Statistical Studies in the Context of Reproducibility}
+Results:
+\begin{itemize}
+ \item True: share of languages with ejectives is higher if the elevation is more than 1500m (verified on PHOIBLE data).
+ \item Not true: the higher the language, the more ejectives there are.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{PHOIBLE and Elevation}
+\begin{tabular}{llcccc}
+\toprule
+{} & Dataset &     short &      long & delayedRelease & ... \\
+\midrule
+0 &   UPSID &    0.7304 &    0.6205 &         0.6106 &    ... \\
+1 &     SPA &    0.4974 &    0.8311 &         0.4335 &    ... \\
+2 &      GM &    0.6587 &    0.0070 &         0.8435 &    ... \\
+3 &      RA &    0.0826 &    0.1125 &            nan &    ... \\
+5 &      AA &       NaN &    0.7559 &            nan &    ... \\
+6 &      PH &       NaN &    0.2549 &         0.9051 &    ... \\
+7 &  SAPHON &       NaN &    0.0287 &         0.4856 &    ... \\
+\midrule
+4 &  Median &  0.578074 &  0.254949 &       0.610642 &    ... \\
+\bottomrule
+\end{tabular}
+\end{frame}
+
+\begin{frame}
+\frametitle{Autotyp and Elevation}
+\begin{itemize}
+ \item `Exponence: number of categories that are expressed in the same marker`.
+ \item `Rough approximation of the size of the possessum category in terms of the number of semantic classes covered`.
+ \item `Number of separately marked inflectional categories (including agreement) in position "post" of the verb`.
+ \item `Number of morpheme types included in a phonologically or grammatically coherent suffix domain`.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Autotyp and Elevation}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lll}
+\toprule
+Feature &                    Subfeature &     P-value \\
+\midrule
+Grammatical\_markers &                   Exponence.n &  0.00000000 \\
+NP\_structure &          NPHeadSemClassSize.n &  0.01766784 \\
+VInfl\_counts\_per\_position &          VInflCatAndAgrPost.n &  0.02895302 \\
+Word\_domains &  MphmTypesInCohSuffixDomain.n &  0.00196901 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Autotyp and Elevation}
+ \includegraphics[width=\textwidth]{images/AutotypRegr.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{WALS: Implicative Universaliae}
+
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|l|cccc|l|}
+\hline
+feature & \_10A\_desc & \_25B\_desc & \_39B\_desc & \_47A\_desc & ... \\
+\hline
+\_10A\_desc &   1.00000 &   0.99444 &       nan &   0.63296 &   ... \\
+\_25B\_desc &   0.90442 &   1.00000 &       nan &   0.96609 &   ... \\
+\_39B\_desc &   1.00000 &       nan &   1.00000 &   0.66501 &   ... \\
+\_47A\_desc &   0.82120 &   0.84267 &   0.66501 &   1.00000 &   ... \\
+\hline
+... &   ... &   ... &       ... &   ... &   ... \\
+\hline
+\end{tabular}
+\end{adjustbox}
 \end{frame}
 
 
